@@ -1,0 +1,21 @@
+
+missing_test_scenarios:
+  edge_cases: "edge case.*?(?=\\n|$)"
+  boundary_values: "boundary.*?(?=\\n|$)"
+  performance_tests: "performance.*?(?=\\n|$)"
+  error_handling: "error handling.*?(?=\\n|$)"
+
+incorrect_assertions:
+  wrong_expectations: "expects.*?but"
+  invalid_assertions: "needs.*?validation"
+  incomplete_checks: "should.*?include"
+
+coverage_gaps:
+  path_coverage: "path.*?coverage"
+  condition_coverage: "condition.*?coverage"
+  data_coverage: "data.*?coverage"
+
+edge_case_analysis:
+  boundary_conditions: "boundary.*?conditions"
+  corner_cases: "corner.*?cases"
+  special_inputs: "special.*?inputs"

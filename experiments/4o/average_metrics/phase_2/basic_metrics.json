@@ -1,0 +1,49 @@
+{
+    "success_rates_by_concept": {
+        "data_structures": 0.33285849952516616,
+        "loops": 0.4186307519640853,
+        "conditionals": 0.3640350877192982,
+        "error_handling": 0.40180180180180175,
+        "algorithms": 0.34050179211469533,
+        "sorting": 0.3800599700149925,
+        "functions": 0.36419753086419754,
+        "recursion": 0.2687719298245614,
+        "dynamic_programming": 0.21096017647741783,
+        "searching": 0.40027605244996556
+    },
+    "success_rates_by_difficulty": {
+        "very hard": 0.2777425826206314,
+        "hard": 0.3250712250712251,
+        "medium": 0.6,
+        "easy": 0.5666666666666667,
+        "very easy": 0.8333333333333333
+    },
+    "avg_attempts_by_concept": {
+        "data_structures": 2.47340930674264,
+        "loops": 2.2368125701459034,
+        "conditionals": 2.4280701754385965,
+        "error_handling": 2.5004504504504506,
+        "algorithms": 2.464669738863287,
+        "sorting": 2.3691904047976013,
+        "functions": 2.3333333333333335,
+        "recursion": 2.541754385964912,
+        "dynamic_programming": 2.6787994891443163,
+        "searching": 2.2774327122153206
+    },
+    "avg_attempts_by_difficulty": {
+        "very hard": 2.5955548516524125,
+        "hard": 2.412535612535613,
+        "medium": 1.8333333333333333,
+        "easy": 1.8666666666666665,
+        "very easy": 1.6666666666666667
+    },
+    "fixer_intervention_rate_difficulty": {
+        "very hard": 2.0
+    },
+    "fixer_intervention_rate_concept": {
+        "data_structures": 2.0,
+        "algorithms": 2.0,
+        "error_handling": 2.0,
+        "conditionals": 2.0
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "success_rates_by_concept": {
+        "loops": 0.15,
+        "functions": 0.0,
+        "algorithms": 0.5,
+        "sorting": 0.09523809523809523,
+        "searching": 0.3666666666666667,
+        "dynamic_programming": 0.3333333333333333,
+        "recursion": 0.1111111111111111,
+        "data_structures": 0.0,
+        "conditionals": 0.4,
+        "error_handling": 0.0
+    },
+    "success_rates_by_difficulty": {
+        "very easy": 0.2126022126022126,
+        "easy": 0.3333333333333333,
+        "medium": 0.0
+    },
+    "avg_attempts_by_concept": {
+        "loops": 2.8666666666666667,
+        "functions": 3.0,
+        "algorithms": 2.0,
+        "sorting": 2.8095238095238098,
+        "searching": 2.433333333333333,
+        "dynamic_programming": 2.3333333333333335,
+        "recursion": 2.777777777777778,
+        "data_structures": 3.0,
+        "conditionals": 2.2,
+        "error_handling": 3.0
+    },
+    "avg_attempts_by_difficulty": {
+        "very easy": 2.648869648869649,
+        "easy": 2.3333333333333335,
+        "medium": 3.0
+    },
+    "fixer_intervention_rate_difficulty": {
+        "very easy": 1.0
+    },
+    "fixer_intervention_rate_concept": {
+        "loops": 1.0,
+        "searching": 1.0
+    }
+}

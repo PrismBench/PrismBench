@@ -1,0 +1,287 @@
+{
+    "tree_growth_patterns": {
+        "0": 10.0,
+        "1": 45.0,
+        "2": 4.0,
+        "3": 2.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0
+    },
+    "nodes_by_concept": {
+        "0": {
+            "loops": 1.0,
+            "conditionals": 1.0,
+            "functions": 1.0,
+            "data_structures": 1.0,
+            "algorithms": 1.0,
+            "error_handling": 1.0,
+            "recursion": 1.0,
+            "sorting": 1.0,
+            "searching": 1.0,
+            "dynamic_programming": 1.0
+        },
+        "1": {
+            "loops": 9.0,
+            "conditionals": 9.0,
+            "functions": 9.0,
+            "data_structures": 9.0,
+            "algorithms": 9.0,
+            "error_handling": 9.0,
+            "recursion": 9.0,
+            "sorting": 9.0,
+            "searching": 9.0,
+            "dynamic_programming": 9.0
+        },
+        "2": {
+            "loops": 1.6666666666666667,
+            "data_structures": 1.0,
+            "sorting": 1.3333333333333333,
+            "algorithms": 2.0,
+            "functions": 1.0,
+            "conditionals": 2.0,
+            "searching": 3.0,
+            "recursion": 1.5,
+            "error_handling": 1.0,
+            "dynamic_programming": 1.0
+        },
+        "3": {
+            "conditionals": 2.0,
+            "searching": 3.0,
+            "sorting": 1.0,
+            "algorithms": 1.0,
+            "error_handling": 1.0,
+            "dynamic_programming": 1.0,
+            "data_structures": 1.0
+        },
+        "4": {
+            "sorting": 1.0,
+            "searching": 1.0
+        },
+        "5": {
+            "searching": 1.0,
+            "sorting": 1.0
+        },
+        "6": {
+            "sorting": 1.0,
+            "searching": 1.0,
+            "error_handling": 1.0
+        }
+    },
+    "nodes_by_difficulty": {
+        "0": {
+            "very easy": 10.0
+        },
+        "1": {
+            "very easy": 45.0
+        },
+        "2": {
+            "easy": 4.5,
+            "very easy": 1.5
+        },
+        "3": {
+            "medium": 2.0,
+            "very easy": 1.0
+        },
+        "4": {
+            "hard": 1.0
+        },
+        "5": {
+            "very hard": 1.0
+        },
+        "6": {
+            "hard": 1.0
+        }
+    },
+    "depth_breadth_stats": {
+        "max_depth": 3.6666666666666665,
+        "branching_factors": {
+            "0": 9.0,
+            "1": 1.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 1.0,
+            "5": 1.0
+        }
+    },
+    "convergence_speeds": {
+        "functions": 1.0,
+        "loops": 1.5833333333333333,
+        "sorting": 1.0,
+        "recursion": 1.0,
+        "dynamic_programming": 1.0,
+        "searching": 1.0,
+        "error_handling": 1.0,
+        "conditionals": 1.0,
+        "algorithms": 1.4,
+        "data_structures": 1.0
+    },
+    "convergence_by_difficulty": {
+        "very easy": {
+            "functions": 1.0,
+            "loops": 1.5555555555555556,
+            "sorting": 1.0,
+            "recursion": 1.0,
+            "dynamic_programming": 1.0,
+            "searching": 1.0,
+            "error_handling": 1.0,
+            "conditionals": 1.0,
+            "algorithms": 1.0,
+            "data_structures": 1.0
+        },
+        "easy": {
+            "loops": 1.5,
+            "sorting": 1.0,
+            "algorithms": 2.0,
+            "conditionals": 1.0,
+            "recursion": 1.0
+        },
+        "medium": {
+            "conditionals": 1.0,
+            "searching": 1.0
+        },
+        "hard": {
+            "sorting": 1.0
+        },
+        "very hard": {
+            "searching": 1.0
+        }
+    },
+    "path_success_rates": {
+        "2": 0.06296296296296296,
+        "3": 0.4305555555555555,
+        "4": 0.5833333333333333,
+        "5": 0.8,
+        "6": 0.8333333333333334,
+        "7": 0.8571428571428571
+    },
+    "path_success_by_concept": {
+        "loops": {
+            "2": 0.0925925925925926,
+            "3": 0.3333333333333333
+        },
+        "conditionals": {
+            "2": 0.05555555555555555,
+            "3": 0.6666666666666666,
+            "4": 0.625
+        },
+        "functions": {
+            "2": 0.05555555555555555,
+            "3": 0.3333333333333333
+        },
+        "data_structures": {
+            "2": 0.037037037037037035,
+            "3": 0.4444444444444444,
+            "4": 0.5
+        },
+        "algorithms": {
+            "2": 0.07407407407407407,
+            "3": 0.5,
+            "4": 0.625
+        },
+        "error_handling": {
+            "2": 0.018518518518518517,
+            "3": 0.3333333333333333,
+            "7": 0.8571428571428571,
+            "4": 0.75
+        },
+        "recursion": {
+            "2": 0.05555555555555555,
+            "3": 0.3333333333333333
+        },
+        "sorting": {
+            "2": 0.07407407407407407,
+            "3": 0.5,
+            "4": 0.625,
+            "5": 0.8,
+            "6": 0.8333333333333334,
+            "7": 0.8571428571428571
+        },
+        "searching": {
+            "2": 0.0925925925925926,
+            "3": 0.43333333333333335,
+            "4": 0.6666666666666666,
+            "5": 0.8,
+            "6": 0.8333333333333334,
+            "7": 0.8571428571428571
+        },
+        "dynamic_programming": {
+            "2": 0.07407407407407407,
+            "3": 0.6666666666666666,
+            "4": 0.5
+        }
+    },
+    "tree_balance_metrics": {
+        "depth_ratio": 0.6100989087630824,
+        "breadth_variance": NaN,
+        "avg_branching_factor": 3.6666666666666665,
+        "depth_utilization": 1.3333333333333333,
+        "path_length_ratio": NaN
+    },
+    "concept_depth_distribution": {
+        "loops": {
+            "0": 1.0,
+            "1": 9.0,
+            "2": 1.6666666666666667
+        },
+        "conditionals": {
+            "0": 1.0,
+            "1": 9.0,
+            "2": 2.0,
+            "3": 2.0
+        },
+        "functions": {
+            "0": 1.0,
+            "1": 9.0,
+            "2": 1.0
+        },
+        "data_structures": {
+            "0": 1.0,
+            "1": 9.0,
+            "2": 1.0,
+            "3": 1.0
+        },
+        "algorithms": {
+            "0": 1.0,
+            "1": 9.0,
+            "2": 2.0,
+            "3": 1.0
+        },
+        "error_handling": {
+            "0": 1.0,
+            "1": 9.0,
+            "2": 1.0,
+            "6": 1.0,
+            "3": 1.0
+        },
+        "recursion": {
+            "0": 1.0,
+            "1": 9.0,
+            "2": 1.5
+        },
+        "sorting": {
+            "0": 1.0,
+            "1": 9.0,
+            "2": 1.3333333333333333,
+            "3": 1.0,
+            "4": 1.0,
+            "5": 1.0,
+            "6": 1.0
+        },
+        "searching": {
+            "0": 1.0,
+            "1": 9.0,
+            "2": 3.0,
+            "3": 3.0,
+            "4": 1.0,
+            "5": 1.0,
+            "6": 1.0
+        },
+        "dynamic_programming": {
+            "0": 1.0,
+            "1": 9.0,
+            "2": 1.0,
+            "3": 1.0
+        }
+    }
+}

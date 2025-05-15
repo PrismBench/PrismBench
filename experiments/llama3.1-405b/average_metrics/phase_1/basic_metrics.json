@@ -1,0 +1,59 @@
+{
+    "success_rates_by_concept": {
+        "loops": 0.645021645021645,
+        "data_structures": 0.5889724310776944,
+        "algorithms": 0.6771284271284271,
+        "error_handling": 0.6986837011227255,
+        "recursion": 0.5923013923013922,
+        "sorting": 0.6198975700119865,
+        "searching": 0.698102080688581,
+        "dynamic_programming": 0.5645833333333333,
+        "conditionals": 0.5251892277314613,
+        "functions": 0.599129593810445
+    },
+    "success_rates_by_difficulty": {
+        "very easy": 0.8473063973063973,
+        "easy": 0.7129629629629631,
+        "medium": 0.43903318903318905,
+        "hard": 0.4910656270305393,
+        "very hard": 0.361971361971362
+    },
+    "avg_attempts_by_concept": {
+        "loops": 2.3282828282828283,
+        "data_structures": 2.3563074352548035,
+        "algorithms": 2.3127705627705626,
+        "error_handling": 2.2451800232288037,
+        "recursion": 2.5524160524160524,
+        "sorting": 2.2039991282554214,
+        "searching": 2.1136185614347838,
+        "dynamic_programming": 2.6419642857142858,
+        "conditionals": 2.385690909755741,
+        "functions": 2.4231141199226305
+    },
+    "avg_attempts_by_difficulty": {
+        "very easy": 2.0460016835016837,
+        "easy": 2.2702020202020203,
+        "medium": 2.4709235209235207,
+        "hard": 2.540204678362573,
+        "very hard": 2.686147186147186
+    },
+    "fixer_intervention_rate_difficulty": {
+        "very easy": 3.3333333333333335,
+        "easy": 2.0,
+        "very hard": 2.0,
+        "hard": 1.0,
+        "medium": 1.0
+    },
+    "fixer_intervention_rate_concept": {
+        "loops": 2.3333333333333335,
+        "searching": 2.0,
+        "dynamic_programming": 3.0,
+        "recursion": 2.3333333333333335,
+        "data_structures": 2.3333333333333335,
+        "algorithms": 2.3333333333333335,
+        "functions": 1.6666666666666667,
+        "conditionals": 1.6666666666666667,
+        "error_handling": 2.0,
+        "sorting": 1.3333333333333333
+    }
+}

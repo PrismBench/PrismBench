@@ -1,0 +1,5 @@
+colorama
+langchain_core
+langchain_openai
+loguru
+graphviz

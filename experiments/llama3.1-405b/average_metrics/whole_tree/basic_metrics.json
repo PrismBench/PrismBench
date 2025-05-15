@@ -1,0 +1,59 @@
+{
+    "success_rates_by_concept": {
+        "loops": 0.4841594677569443,
+        "data_structures": 0.42596201899050473,
+        "algorithms": 0.49720410065237647,
+        "error_handling": 0.552744708994709,
+        "recursion": 0.5481630546955625,
+        "sorting": 0.48205772649870154,
+        "searching": 0.4882935999316415,
+        "dynamic_programming": 0.4229887723600134,
+        "conditionals": 0.43263691041468816,
+        "functions": 0.5043976030161309
+    },
+    "success_rates_by_difficulty": {
+        "very easy": 0.8290171414477742,
+        "easy": 0.7224481658692185,
+        "medium": 0.39396467806980945,
+        "hard": 0.4626173462239036,
+        "very hard": 0.29111447074969976
+    },
+    "avg_attempts_by_concept": {
+        "loops": 2.440989456253343,
+        "data_structures": 2.5145552223888057,
+        "algorithms": 2.452469711090401,
+        "error_handling": 2.3601190476190474,
+        "recursion": 2.508173374613003,
+        "sorting": 2.365057142954644,
+        "searching": 2.4090391416411916,
+        "dynamic_programming": 2.6672741631735613,
+        "conditionals": 2.527849002849003,
+        "functions": 2.4184757371720456
+    },
+    "avg_attempts_by_difficulty": {
+        "very easy": 2.063147428782834,
+        "easy": 2.2665071770334926,
+        "medium": 2.5188429981921847,
+        "hard": 2.5076782962028865,
+        "very hard": 2.659398767655973
+    },
+    "fixer_intervention_rate_difficulty": {
+        "very easy": 3.6666666666666665,
+        "easy": 2.3333333333333335,
+        "very hard": 2.5,
+        "hard": 1.0,
+        "medium": 1.3333333333333333
+    },
+    "fixer_intervention_rate_concept": {
+        "loops": 3.0,
+        "searching": 3.3333333333333335,
+        "dynamic_programming": 3.3333333333333335,
+        "recursion": 3.3333333333333335,
+        "data_structures": 3.3333333333333335,
+        "algorithms": 3.0,
+        "functions": 2.0,
+        "conditionals": 2.3333333333333335,
+        "error_handling": 2.3333333333333335,
+        "sorting": 2.3333333333333335
+    }
+}

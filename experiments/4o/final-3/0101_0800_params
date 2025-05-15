@@ -1,0 +1,10 @@
+environment:
+  phase 1 exploration probability: 0.2
+  phase 1 performance threshold: 0.4
+  phase 1 value threshold: 0.3
+  phase 2 value threshold: 0.1
+  phase 3 value threshold: 0.5
+model_under_benchmark:
+  model: GPT-4o
+  timestamp: 0101_0800
+  version: v7

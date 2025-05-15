@@ -1,0 +1,26 @@
+max_attempts: 3
+discount_factor: 0.9
+learning_rate: 0.9
+
+phase1:
+  performance_threshold: 0.4 # higher thresholds, mean more conservative node expansion
+  value_delta_threshold: 0.3 # higher thresholds, mean easier convergence checks
+  convergence_checks: 5
+  exploration_probability: 0.2 # higher values, mean more exploration
+  scoring:
+    penalty_per_failure: 2
+    penalty_per_error: 3
+    penalty_per_attempt: 1
+    fixed_by_problem_fixer_penalty: 5
+    max_num_passed: 10
+
+phase2:
+  challenge_threshold: 0.6 # higher thresholds, mean selecting more challenging nodes
+  convergence_checks: 5
+  value_delta_threshold: 0.1 # higher thresholds, mean easier convergence checks
+  exploration_weight: 1.414
+  exploration_probability: 0.1
+
+phase3:
+  variations_per_concept: 5  # number of variations to generate per concept
+  node_selection_threshold: 0.5 # higher thresholds, mean selecting more challenging nodes

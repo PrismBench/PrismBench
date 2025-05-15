@@ -1,0 +1,2665 @@
+{
+    "concept_mastery_distribution": {
+        "loops": {
+            "very easy": {
+                "success_rate": 0.9010709356206251,
+                "visits": 40.0
+            },
+            "easy": {
+                "success_rate": 0.8795833333333333,
+                "visits": 23.333333333333332
+            },
+            "medium": {
+                "success_rate": 0.4426343636869953,
+                "visits": 14.0
+            },
+            "hard": {
+                "success_rate": 0.5471861471861472,
+                "visits": 7.666666666666667
+            },
+            "very hard": {
+                "success_rate": 0.4666666666666667,
+                "visits": 5.5
+            }
+        },
+        "data_structures": {
+            "very easy": {
+                "success_rate": 0.8522988505747127,
+                "visits": 53.0
+            },
+            "easy": {
+                "success_rate": 0.7280583613916947,
+                "visits": 35.0
+            },
+            "medium": {
+                "success_rate": 0.5072649572649572,
+                "visits": 20.666666666666668
+            },
+            "hard": {
+                "success_rate": 0.48148148148148145,
+                "visits": 11.0
+            },
+            "very hard": {
+                "success_rate": 0.16666666666666666,
+                "visits": 3.0
+            }
+        },
+        "algorithms": {
+            "very easy": {
+                "success_rate": 0.9563932002956393,
+                "visits": 41.333333333333336
+            },
+            "easy": {
+                "success_rate": 0.759317311041449,
+                "visits": 21.333333333333332
+            },
+            "medium": {
+                "success_rate": 0.6303418803418803,
+                "visits": 16.666666666666668
+            },
+            "hard": {
+                "success_rate": 0.7764705882352941,
+                "visits": 12.0
+            },
+            "very hard": {
+                "success_rate": 0.48888888888888893,
+                "visits": 4.666666666666667
+            }
+        },
+        "error_handling": {
+            "very easy": {
+                "success_rate": 0.9286047053342651,
+                "visits": 49.0
+            },
+            "easy": {
+                "success_rate": 0.7454166666666667,
+                "visits": 32.333333333333336
+            },
+            "medium": {
+                "success_rate": 0.6833333333333332,
+                "visits": 22.0
+            },
+            "hard": {
+                "success_rate": 0.7072649572649573,
+                "visits": 10.0
+            },
+            "very hard": {
+                "success_rate": 0.48888888888888893,
+                "visits": 3.3333333333333335
+            }
+        },
+        "recursion": {
+            "very easy": {
+                "success_rate": 0.9753584229390682,
+                "visits": 32.666666666666664
+            },
+            "easy": {
+                "success_rate": 0.8675292939998821,
+                "visits": 24.0
+            },
+            "medium": {
+                "success_rate": 0.3828282828282829,
+                "visits": 18.0
+            },
+            "hard": {
+                "success_rate": 0.2564102564102564,
+                "visits": 10.5
+            },
+            "very hard": {
+                "success_rate": 0.0,
+                "visits": 2.0
+            }
+        },
+        "sorting": {
+            "very easy": {
+                "success_rate": 0.9656862745098039,
+                "visits": 49.0
+            },
+            "easy": {
+                "success_rate": 0.7986751152073733,
+                "visits": 38.333333333333336
+            },
+            "medium": {
+                "success_rate": 0.654288884266001,
+                "visits": 27.666666666666668
+            },
+            "hard": {
+                "success_rate": 0.7619047619047619,
+                "visits": 18.666666666666668
+            },
+            "very hard": {
+                "success_rate": 0.06944444444444445,
+                "visits": 12.5
+            }
+        },
+        "searching": {
+            "very easy": {
+                "success_rate": 0.9558531746031745,
+                "visits": 51.666666666666664
+            },
+            "easy": {
+                "success_rate": 0.7587719298245613,
+                "visits": 38.0
+            },
+            "medium": {
+                "success_rate": 0.6607327141382869,
+                "visits": 25.666666666666668
+            },
+            "hard": {
+                "success_rate": 0.6064814814814815,
+                "visits": 17.333333333333332
+            },
+            "very hard": {
+                "success_rate": 0.5904761904761905,
+                "visits": 10.666666666666666
+            }
+        },
+        "dynamic_programming": {
+            "very easy": {
+                "success_rate": 0.8278271436166174,
+                "visits": 28.333333333333332
+            },
+            "easy": {
+                "success_rate": 0.8093434343434344,
+                "visits": 17.333333333333332
+            },
+            "medium": {
+                "success_rate": 0.07692307692307693,
+                "visits": 8.0
+            },
+            "hard": {
+                "success_rate": 0.6785714285714286,
+                "visits": 4.5
+            },
+            "very hard": {
+                "success_rate": 0.0,
+                "visits": 5.0
+            }
+        },
+        "conditionals": {
+            "very easy": {
+                "success_rate": 0.8167267372011007,
+                "visits": 46.0
+            },
+            "easy": {
+                "success_rate": 0.7121973310396955,
+                "visits": 34.0
+            },
+            "medium": {
+                "success_rate": 0.6351851851851852,
+                "visits": 23.0
+            },
+            "hard": {
+                "success_rate": 0.5539869281045752,
+                "visits": 15.0
+            },
+            "very hard": {
+                "success_rate": 0.32167832167832167,
+                "visits": 12.0
+            }
+        },
+        "functions": {
+            "very easy": {
+                "success_rate": 0.925650352733686,
+                "visits": 43.666666666666664
+            },
+            "easy": {
+                "success_rate": 0.8961314255431901,
+                "visits": 32.0
+            },
+            "medium": {
+                "success_rate": 0.6762632197414806,
+                "visits": 22.666666666666668
+            },
+            "hard": {
+                "success_rate": 0.4753086419753087,
+                "visits": 19.333333333333332
+            },
+            "very hard": {
+                "success_rate": 0.30128205128205127,
+                "visits": 16.0
+            }
+        }
+    },
+    "performance_degradation": {
+        "loops": [
+            {
+                "complexity": {
+                    "sum": 6.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.0,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.209013209013209,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 0.7752775627428129,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 44.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 10.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 2.448079877112135,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 1.7666666666666666,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 0.6297083333333333,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 15.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 8.0,
+                    "count": 2
+                },
+                "relative_performance": {
+                    "sum": 1.9105813541297412,
+                    "count": 2
+                },
+                "absolute_success": {
+                    "sum": 1.3653846153846154,
+                    "count": 2
+                },
+                "value_convergence": {
+                    "sum": 0.6670578983516484,
+                    "count": 2
+                },
+                "sample_size": {
+                    "sum": 27.0,
+                    "count": 2
+                }
+            }
+        ],
+        "data_structures": [
+            {
+                "complexity": {
+                    "sum": 6.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.0,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 1.8661764705882353,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 0.6234243769534313,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 56.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 10.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.012934094767711,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 1.8727272727272726,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.1927725744318183,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 20.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 8.0,
+                    "count": 2
+                },
+                "relative_performance": {
+                    "sum": 2.438000242541839,
+                    "count": 2
+                },
+                "absolute_success": {
+                    "sum": 1.5178571428571428,
+                    "count": 2
+                },
+                "value_convergence": {
+                    "sum": 0.7462053571428571,
+                    "count": 2
+                },
+                "sample_size": {
+                    "sum": 22.0,
+                    "count": 2
+                }
+            }
+        ],
+        "algorithms": [
+            {
+                "complexity": {
+                    "sum": 6.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.0,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.2623106060606064,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 0.9463551752651517,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 39.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 9.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.1511484593837538,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.380952380952381,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.2553661702380954,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 11.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 12.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.1854901960784314,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.388888888888889,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.3683450615079367,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 31.0,
+                    "count": 3
+                }
+            }
+        ],
+        "error_handling": [
+            {
+                "complexity": {
+                    "sum": 6.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.0,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.128293807641634,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 0.8169948087551056,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 69.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 11.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.600714768666087,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.533333333333333,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.4542879166666665,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 27.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 4.0,
+                    "count": 1
+                },
+                "relative_performance": {
+                    "sum": 1.517241379310345,
+                    "count": 1
+                },
+                "absolute_success": {
+                    "sum": 1.0,
+                    "count": 1
+                },
+                "value_convergence": {
+                    "sum": 0.1425,
+                    "count": 1
+                },
+                "sample_size": {
+                    "sum": 3.0,
+                    "count": 1
+                }
+            }
+        ],
+        "recursion": [
+            {
+                "complexity": {
+                    "sum": 6.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.0,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.1029411764705883,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 0.6563568166666667,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 42.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 9.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 2.956225513616818,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.0166666666666666,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.4831731383333335,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 9.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 12.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.374677496416627,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.380952380952381,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.1641714285714286,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 15.0,
+                    "count": 3
+                }
+            }
+        ],
+        "sorting": [
+            {
+                "complexity": {
+                    "sum": 6.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.0,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.179935131947516,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.038542737513637,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 57.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 9.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 2.3975201716453762,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 1.7291666666666665,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 0.9004166666666668,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 9.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 12.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.147291795634158,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.1818181818181817,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.2670614545454544,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 30.0,
+                    "count": 3
+                }
+            }
+        ],
+        "searching": [
+            {
+                "complexity": {
+                    "sum": 6.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.0,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.2354312354312356,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.4077927894222029,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 70.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 11.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 2.77243563909532,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.0416666666666665,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.23739125,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 30.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 4.0,
+                    "count": 1
+                },
+                "relative_performance": {
+                    "sum": 0.9457013574660633,
+                    "count": 1
+                },
+                "absolute_success": {
+                    "sum": 0.7307692307692307,
+                    "count": 1
+                },
+                "value_convergence": {
+                    "sum": 0.40873076923076923,
+                    "count": 1
+                },
+                "sample_size": {
+                    "sum": 13.0,
+                    "count": 1
+                }
+            }
+        ],
+        "dynamic_programming": [
+            {
+                "complexity": {
+                    "sum": 6.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.0,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 1.8125,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 0.59202803125,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 38.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 11.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.0385944700460827,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 1.7619047619047619,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 0.8876306547619048,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 23.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 4.0,
+                    "count": 1
+                },
+                "relative_performance": {
+                    "sum": 0.0,
+                    "count": 1
+                },
+                "absolute_success": {
+                    "sum": 0.0,
+                    "count": 1
+                },
+                "value_convergence": {
+                    "sum": 0.3,
+                    "count": 1
+                },
+                "sample_size": {
+                    "sum": 1.0,
+                    "count": 1
+                }
+            }
+        ],
+        "conditionals": [
+            {
+                "complexity": {
+                    "sum": 6.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.0,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 1.7351851851851854,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 0.6544327354166667,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 62.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 11.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 2.5865191146881283,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 1.4206349206349207,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.328970634920635,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 24.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 4.0,
+                    "count": 1
+                },
+                "relative_performance": {
+                    "sum": 0.8571428571428571,
+                    "count": 1
+                },
+                "absolute_success": {
+                    "sum": 0.5357142857142857,
+                    "count": 1
+                },
+                "value_convergence": {
+                    "sum": 0.16795275,
+                    "count": 1
+                },
+                "sample_size": {
+                    "sum": 14.0,
+                    "count": 1
+                }
+            }
+        ],
+        "functions": [
+            {
+                "complexity": {
+                    "sum": 6.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 3.0,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 2.354465709728868,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 0.500534250460925,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 53.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 9.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 2.1635052497980847,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 1.6666666666666665,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.3105666666666667,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 10.0,
+                    "count": 3
+                }
+            },
+            {
+                "complexity": {
+                    "sum": 12.0,
+                    "count": 3
+                },
+                "relative_performance": {
+                    "sum": 2.379393100265374,
+                    "count": 3
+                },
+                "absolute_success": {
+                    "sum": 1.8484848484848482,
+                    "count": 3
+                },
+                "value_convergence": {
+                    "sum": 1.1092238636363636,
+                    "count": 3
+                },
+                "sample_size": {
+                    "sum": 27.0,
+                    "count": 3
+                }
+            }
+        ]
+    },
+    "difficulty_scaling_patterns": {
+        "loops": {
+            "easy": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.11041666666666666,
+                "adjusted_success": 0.4966666666666666,
+                "value_convergence": 0.14858333333333335
+            },
+            "hard": {
+                "success_rate": 0.5,
+                "visit_ratio": 0.10095536647260785,
+                "adjusted_success": 0.35975369458128076,
+                "value_convergence": 0.3333333333333333
+            },
+            "medium": {
+                "success_rate": 0.3333333333333333,
+                "visit_ratio": 0.09312752113696253,
+                "adjusted_success": 0.23978494623655913,
+                "value_convergence": 0.1475
+            },
+            "very easy": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.19344365312107248,
+                "adjusted_success": 0.49742703533026117,
+                "value_convergence": 0.1134
+            },
+            "very hard": {
+                "success_rate": 0.0,
+                "visit_ratio": 0.045008912655971484,
+                "adjusted_success": 0.0,
+                "value_convergence": 0.15
+            }
+        },
+        "data_structures": {
+            "easy": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.09843265725618666,
+                "adjusted_success": 0.49349376114081994,
+                "value_convergence": 0.1025
+            },
+            "hard": {
+                "success_rate": 0.3333333333333333,
+                "visit_ratio": 0.10968253968253967,
+                "adjusted_success": 0.24933333333333332,
+                "value_convergence": 0.24975000000000003
+            },
+            "medium": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.10672268907563026,
+                "adjusted_success": 0.489859943977591,
+                "value_convergence": 0.05833333333333333
+            },
+            "very easy": {
+                "success_rate": 1.0,
+                "visit_ratio": 0.1496376811594203,
+                "adjusted_success": 0.744891304347826,
+                "value_convergence": 0.36225
+            },
+            "very hard": {
+                "success_rate": 0.3333333333333333,
+                "visit_ratio": 0.04888221554888222,
+                "adjusted_success": 0.23703703703703702,
+                "value_convergence": 0.30833333333333335
+            }
+        },
+        "algorithms": {
+            "easy": {
+                "success_rate": 0.3333333333333333,
+                "visit_ratio": 0.052868554829339144,
+                "adjusted_success": 0.24215686274509804,
+                "value_convergence": 0.229
+            },
+            "hard": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.11704911433172303,
+                "adjusted_success": 0.4990036231884058,
+                "value_convergence": 0.3441666666666667
+            },
+            "medium": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.10130568356374807,
+                "adjusted_success": 0.4820583717357911,
+                "value_convergence": 0.54675
+            },
+            "very easy": {
+                "success_rate": 1.0,
+                "visit_ratio": 0.10679487179487179,
+                "adjusted_success": 0.7320384615384615,
+                "value_convergence": 0.24675000000000002
+            },
+            "very hard": {
+                "success_rate": 0.16666666666666666,
+                "visit_ratio": 0.10551948051948053,
+                "adjusted_success": 0.11969696969696969,
+                "value_convergence": 0.5333333333333333
+            }
+        },
+        "error_handling": {
+            "easy": {
+                "success_rate": 1.0,
+                "visit_ratio": 0.10124576146247972,
+                "adjusted_success": 0.7303737284387438,
+                "value_convergence": 0.32925
+            },
+            "hard": {
+                "success_rate": 1.0,
+                "visit_ratio": 0.10018939393939393,
+                "adjusted_success": 0.7300568181818181,
+                "value_convergence": 0.5178416666666666
+            },
+            "medium": {
+                "success_rate": 0.5,
+                "visit_ratio": 0.06865395141257209,
+                "adjusted_success": 0.35857648099027406,
+                "value_convergence": 0.3658333333333333
+            },
+            "very easy": {
+                "success_rate": 1.0,
+                "visit_ratio": 0.13975155279503104,
+                "adjusted_success": 0.7419254658385093,
+                "value_convergence": 0.2205
+            },
+            "very hard": {
+                "success_rate": 0.16666666666666666,
+                "visit_ratio": 0.05632281898266553,
+                "adjusted_success": 0.12,
+                "value_convergence": 0.5666666666666668
+            }
+        },
+        "recursion": {
+            "easy": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.051370148259203725,
+                "adjusted_success": 0.4777298850574712,
+                "value_convergence": 0.3741666666666667
+            },
+            "hard": {
+                "success_rate": 0.5,
+                "visit_ratio": 0.3057644110275689,
+                "adjusted_success": 0.37857142857142856,
+                "value_convergence": 0.5356125
+            },
+            "medium": {
+                "success_rate": 0.0,
+                "visit_ratio": 0.09726295210166176,
+                "adjusted_success": 0.0,
+                "value_convergence": 0.1875
+            },
+            "very easy": {
+                "success_rate": 1.0,
+                "visit_ratio": 0.35773809523809524,
+                "adjusted_success": 0.8073214285714285,
+                "value_convergence": 0.31852225833333336
+            },
+            "very hard": {
+                "success_rate": 0.0,
+                "visit_ratio": 0.08695652173913043,
+                "adjusted_success": 0.0,
+                "value_convergence": 0.3
+            }
+        },
+        "sorting": {
+            "easy": {
+                "success_rate": 0.8333333333333334,
+                "visit_ratio": 0.11184424894102314,
+                "adjusted_success": 0.6123411534701857,
+                "value_convergence": 0.28950000000000004
+            },
+            "hard": {
+                "success_rate": 0.8333333333333334,
+                "visit_ratio": 0.08208571281576375,
+                "adjusted_success": 0.6015074342748367,
+                "value_convergence": 0.2833333333333333
+            },
+            "medium": {
+                "success_rate": 0.3333333333333333,
+                "visit_ratio": 0.04742978272390038,
+                "adjusted_success": 0.23873873873873874,
+                "value_convergence": 0.3216666666666667
+            },
+            "very easy": {
+                "success_rate": 0.8333333333333334,
+                "visit_ratio": 0.16953133340450519,
+                "adjusted_success": 0.6210348386178427,
+                "value_convergence": 0.2427
+            },
+            "very hard": {
+                "success_rate": 0.0,
+                "visit_ratio": 0.11785714285714285,
+                "adjusted_success": 0.0,
+                "value_convergence": 0.075
+            }
+        },
+        "searching": {
+            "easy": {
+                "success_rate": 1.0,
+                "visit_ratio": 0.06953532479848269,
+                "adjusted_success": 0.7208605974395447,
+                "value_convergence": 0.4228258333333334
+            },
+            "hard": {
+                "success_rate": 1.0,
+                "visit_ratio": 0.05676942186088527,
+                "adjusted_success": 0.7170308265582656,
+                "value_convergence": 0.5968333333333332
+            },
+            "medium": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.03511420828493999,
+                "adjusted_success": 0.4747619047619047,
+                "value_convergence": 0.5633333333333334
+            },
+            "very easy": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.07657784891567021,
+                "adjusted_success": 0.4873144399460189,
+                "value_convergence": 0.46225000000000005
+            },
+            "very hard": {
+                "success_rate": 0.0,
+                "visit_ratio": 0.0451574569221628,
+                "adjusted_success": 0.0,
+                "value_convergence": 0.19999999999999998
+            }
+        },
+        "dynamic_programming": {
+            "easy": {
+                "success_rate": 0.3333333333333333,
+                "visit_ratio": 0.057153630683042446,
+                "adjusted_success": 0.24102564102564103,
+                "value_convergence": 0.21583333333333335
+            },
+            "medium": {
+                "success_rate": 0.0,
+                "visit_ratio": 0.07160493827160493,
+                "adjusted_success": 0.0,
+                "value_convergence": 0.16666666666666666
+            },
+            "very easy": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.21535353535353532,
+                "adjusted_success": 0.5272727272727272,
+                "value_convergence": 0.365275
+            },
+            "hard": {
+                "success_rate": 0.5,
+                "visit_ratio": 0.04583333333333334,
+                "adjusted_success": 0.3575,
+                "value_convergence": 0.6625000000000001
+            },
+            "very hard": {
+                "success_rate": 0.0,
+                "visit_ratio": 0.25,
+                "adjusted_success": 0.0,
+                "value_convergence": 0.0
+            }
+        },
+        "conditionals": {
+            "easy": {
+                "success_rate": 0.7777777777777777,
+                "visit_ratio": 0.07711640211640212,
+                "adjusted_success": 0.555674603174603,
+                "value_convergence": 0.4083333333333334
+            },
+            "hard": {
+                "success_rate": 0.3333333333333333,
+                "visit_ratio": 0.09913003663003662,
+                "adjusted_success": 0.2520833333333333,
+                "value_convergence": 0.06166666666666667
+            },
+            "medium": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.11900089444244195,
+                "adjusted_success": 0.49547038327526133,
+                "value_convergence": 0.0675
+            },
+            "very easy": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.07139329805996472,
+                "adjusted_success": 0.48438095238095236,
+                "value_convergence": 0.3205
+            },
+            "very hard": {
+                "success_rate": 0.0,
+                "visit_ratio": 0.09901338971106413,
+                "adjusted_success": 0.0,
+                "value_convergence": 0.075
+            }
+        },
+        "functions": {
+            "easy": {
+                "success_rate": 1.0,
+                "visit_ratio": 0.139110402268297,
+                "adjusted_success": 0.741733120680489,
+                "value_convergence": 0.282
+            },
+            "hard": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.1125,
+                "adjusted_success": 0.4879166666666666,
+                "value_convergence": 0.3283333333333333
+            },
+            "medium": {
+                "success_rate": 0.6666666666666666,
+                "visit_ratio": 0.10209205861379773,
+                "adjusted_success": 0.4891861761426979,
+                "value_convergence": 0.3133333333333333
+            },
+            "very easy": {
+                "success_rate": 0.5,
+                "visit_ratio": 0.1582972582972583,
+                "adjusted_success": 0.38136363636363635,
+                "value_convergence": 0.37405
+            },
+            "very hard": {
+                "success_rate": 0.16666666666666666,
+                "visit_ratio": 0.16666666666666669,
+                "adjusted_success": 0.12575757575757573,
+                "value_convergence": 0.10875
+            }
+        }
+    },
+    "concept_combinations": {
+        "data_structures+loops": {
+            "success_rate": 0.6888888888888888,
+            "total_attempts": 3.0,
+            "successful_attempts": 1.6666666666666667,
+            "average_value": 0.16381925,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 1.0
+            },
+            "visits": 12.0,
+            "visits_by_difficulty": {
+                "very easy": 5.666666666666667,
+                "easy": 4.5,
+                "medium": 3.5,
+                "hard": 2.0,
+                "very hard": 1.0
+            }
+        },
+        "algorithms+loops": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.14580000000000004,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 4.0,
+            "visits_by_difficulty": {
+                "very easy": 4.0
+            }
+        },
+        "error_handling+loops": {
+            "success_rate": 0.8888888888888888,
+            "total_attempts": 1.6666666666666667,
+            "successful_attempts": 1.3333333333333333,
+            "average_value": 0.11561055555555559,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "very easy": 5.0,
+                "easy": 2.0,
+                "medium": 1.0
+            }
+        },
+        "loops+recursion": {
+            "success_rate": 0.7833333333333333,
+            "total_attempts": 3.3333333333333335,
+            "successful_attempts": 2.3333333333333335,
+            "average_value": 0.18536525,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 12.333333333333334,
+            "visits_by_difficulty": {
+                "very easy": 5.0,
+                "easy": 6.0,
+                "medium": 5.0
+            }
+        },
+        "loops+sorting": {
+            "success_rate": 0.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 0.0,
+            "average_value": 0.325,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 1.0,
+            "visits_by_difficulty": {
+                "very easy": 1.0
+            }
+        },
+        "loops+searching": {
+            "success_rate": 0.9444444444444445,
+            "total_attempts": 2.6666666666666665,
+            "successful_attempts": 2.3333333333333335,
+            "average_value": 0.43425388888888894,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 2.0
+            },
+            "visits": 9.0,
+            "visits_by_difficulty": {
+                "very easy": 4.0,
+                "easy": 5.0,
+                "medium": 4.0,
+                "hard": 3.0,
+                "very hard": 3.0
+            }
+        },
+        "dynamic_programming+loops": {
+            "success_rate": 0.9166666666666666,
+            "total_attempts": 2.0,
+            "successful_attempts": 1.6666666666666667,
+            "average_value": 0.20245833333333332,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 3.6666666666666665,
+            "visits_by_difficulty": {
+                "very easy": 2.6666666666666665,
+                "easy": 2.0,
+                "medium": 1.0
+            }
+        },
+        "conditionals+functions": {
+            "success_rate": 0.5416666666666666,
+            "total_attempts": 3.3333333333333335,
+            "successful_attempts": 2.0,
+            "average_value": 0.24731746875000002,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 1.0
+            },
+            "visits": 16.666666666666668,
+            "visits_by_difficulty": {
+                "very easy": 5.666666666666667,
+                "easy": 10.0,
+                "medium": 9.0,
+                "hard": 8.0,
+                "very hard": 6.0
+            }
+        },
+        "conditionals+data_structures": {
+            "success_rate": 0.33730158730158727,
+            "total_attempts": 5.666666666666667,
+            "successful_attempts": 2.0,
+            "average_value": 0.05091416666666667,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 1.0
+            },
+            "visits": 17.333333333333332,
+            "visits_by_difficulty": {
+                "very easy": 6.333333333333333,
+                "easy": 5.333333333333333,
+                "medium": 3.6666666666666665,
+                "hard": 2.0,
+                "very hard": 2.0
+            }
+        },
+        "conditionals+error_handling": {
+            "success_rate": 0.6666666666666666,
+            "total_attempts": 4.5,
+            "successful_attempts": 3.0,
+            "average_value": 0.15116758333333336,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 1.0
+            },
+            "visits": 17.0,
+            "visits_by_difficulty": {
+                "very easy": 6.0,
+                "easy": 5.0,
+                "medium": 4.0,
+                "hard": 3.0,
+                "very hard": 1.0
+            }
+        },
+        "conditionals+recursion": {
+            "success_rate": 0.5,
+            "total_attempts": 4.5,
+            "successful_attempts": 2.0,
+            "average_value": 0.016666666666666666,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 8.0,
+            "visits_by_difficulty": {
+                "very easy": 4.5,
+                "easy": 5.0,
+                "medium": 2.0
+            }
+        },
+        "conditionals+sorting": {
+            "success_rate": 0.5888888888888889,
+            "total_attempts": 3.3333333333333335,
+            "successful_attempts": 2.0,
+            "average_value": 0.32456041666666663,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 13.666666666666666,
+            "visits_by_difficulty": {
+                "very easy": 5.0,
+                "easy": 4.0,
+                "medium": 4.5,
+                "hard": 5.0
+            }
+        },
+        "conditionals+searching": {
+            "success_rate": 0.8333333333333334,
+            "total_attempts": 4.333333333333333,
+            "successful_attempts": 3.0,
+            "average_value": 0.39253484375000003,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 2.0
+            },
+            "visits": 17.666666666666668,
+            "visits_by_difficulty": {
+                "very easy": 6.0,
+                "easy": 5.0,
+                "medium": 5.0,
+                "hard": 5.0,
+                "very hard": 5.0
+            }
+        },
+        "algorithms+functions": {
+            "success_rate": 0.8333333333333334,
+            "total_attempts": 2.3333333333333335,
+            "successful_attempts": 2.0,
+            "average_value": 0.3104394375000001,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 7.333333333333333,
+            "visits_by_difficulty": {
+                "very easy": 3.0,
+                "easy": 3.0,
+                "medium": 4.0,
+                "hard": 3.0
+            }
+        },
+        "error_handling+functions": {
+            "success_rate": 0.9166666666666666,
+            "total_attempts": 2.0,
+            "successful_attempts": 1.6666666666666667,
+            "average_value": 0.08068541666666668,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "very easy": 4.0,
+                "easy": 3.0,
+                "medium": 2.0,
+                "hard": 1.0
+            }
+        },
+        "functions+sorting": {
+            "success_rate": 0.5357142857142857,
+            "total_attempts": 6.5,
+            "successful_attempts": 3.5,
+            "average_value": 0.23285224285714287,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 1.0
+            },
+            "visits": 45.5,
+            "visits_by_difficulty": {
+                "very easy": 12.0,
+                "easy": 11.0,
+                "medium": 10.0,
+                "hard": 8.0,
+                "very hard": 9.0
+            }
+        },
+        "functions+searching": {
+            "success_rate": 0.9047619047619048,
+            "total_attempts": 3.6666666666666665,
+            "successful_attempts": 3.0,
+            "average_value": 0.16653057300000004,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 2.0
+            },
+            "visits": 21.0,
+            "visits_by_difficulty": {
+                "very easy": 7.0,
+                "easy": 6.0,
+                "medium": 8.0,
+                "hard": 7.0,
+                "very hard": 9.0
+            }
+        },
+        "dynamic_programming+functions": {
+            "success_rate": 0.8333333333333333,
+            "total_attempts": 2.5,
+            "successful_attempts": 2.0,
+            "average_value": 0.043958333333333335,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 5.5,
+            "visits_by_difficulty": {
+                "very easy": 3.0,
+                "easy": 2.0,
+                "medium": 1.0
+            }
+        },
+        "algorithms+data_structures": {
+            "success_rate": 0.8333333333333334,
+            "total_attempts": 2.0,
+            "successful_attempts": 1.3333333333333333,
+            "average_value": 0.22895586583333336,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 8.333333333333334,
+            "visits_by_difficulty": {
+                "very easy": 6.333333333333333,
+                "easy": 3.0,
+                "medium": 2.0,
+                "hard": 1.0
+            }
+        },
+        "data_structures+error_handling": {
+            "success_rate": 0.47222222222222215,
+            "total_attempts": 2.6666666666666665,
+            "successful_attempts": 1.6666666666666667,
+            "average_value": 0.2658825,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 8.333333333333334,
+            "visits_by_difficulty": {
+                "very easy": 4.666666666666667,
+                "easy": 4.5,
+                "medium": 2.0
+            }
+        },
+        "data_structures+recursion": {
+            "success_rate": 0.6666666666666666,
+            "total_attempts": 3.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.11291666666666668,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "very easy": 3.0,
+                "easy": 2.0,
+                "medium": 1.0
+            }
+        },
+        "data_structures+sorting": {
+            "success_rate": 1.0,
+            "total_attempts": 1.5,
+            "successful_attempts": 1.5,
+            "average_value": 0.07536517125,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0
+            },
+            "visits": 9.0,
+            "visits_by_difficulty": {
+                "very easy": 5.0,
+                "easy": 8.0
+            }
+        },
+        "data_structures+searching": {
+            "success_rate": 0.7619047619047619,
+            "total_attempts": 5.0,
+            "successful_attempts": 4.0,
+            "average_value": 0.4676669583333334,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 2.0
+            },
+            "visits": 16.0,
+            "visits_by_difficulty": {
+                "very easy": 5.0,
+                "easy": 4.0,
+                "medium": 3.0,
+                "hard": 4.0,
+                "very hard": 4.0
+            }
+        },
+        "data_structures+dynamic_programming": {
+            "success_rate": 0.5833333333333333,
+            "total_attempts": 2.5,
+            "successful_attempts": 1.5,
+            "average_value": 0.263921875,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0
+            },
+            "visits": 6.5,
+            "visits_by_difficulty": {
+                "very easy": 4.0,
+                "easy": 2.5
+            }
+        },
+        "algorithms+error_handling": {
+            "success_rate": 0.7428571428571429,
+            "total_attempts": 6.333333333333333,
+            "successful_attempts": 4.666666666666667,
+            "average_value": 0.34400433333333336,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 1.6666666666666667
+            },
+            "visits": 22.0,
+            "visits_by_difficulty": {
+                "very easy": 6.333333333333333,
+                "easy": 5.333333333333333,
+                "medium": 4.333333333333333,
+                "hard": 3.0,
+                "very hard": 3.0
+            }
+        },
+        "algorithms+dynamic_programming": {
+            "success_rate": 0.5555555555555555,
+            "total_attempts": 1.6666666666666667,
+            "successful_attempts": 1.0,
+            "average_value": 0.2191666666666667,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0
+            },
+            "visits": 2.3333333333333335,
+            "visits_by_difficulty": {
+                "very easy": 2.0,
+                "easy": 1.0
+            }
+        },
+        "error_handling+sorting": {
+            "success_rate": 0.8333333333333334,
+            "total_attempts": 3.6666666666666665,
+            "successful_attempts": 3.0,
+            "average_value": 0.27016441666666663,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 13.666666666666666,
+            "visits_by_difficulty": {
+                "very easy": 5.333333333333333,
+                "easy": 4.333333333333333,
+                "medium": 3.0,
+                "hard": 3.0
+            }
+        },
+        "error_handling+searching": {
+            "success_rate": 0.5,
+            "total_attempts": 3.3333333333333335,
+            "successful_attempts": 1.6666666666666667,
+            "average_value": 0.2786878295625,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 13.666666666666666,
+            "visits_by_difficulty": {
+                "very easy": 5.0,
+                "easy": 4.0,
+                "medium": 4.0,
+                "hard": 6.0
+            }
+        },
+        "dynamic_programming+error_handling": {
+            "success_rate": 0.4444444444444444,
+            "total_attempts": 2.3333333333333335,
+            "successful_attempts": 1.3333333333333333,
+            "average_value": 0.26495508333333334,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 7.0,
+            "visits_by_difficulty": {
+                "very easy": 4.0,
+                "easy": 4.0,
+                "medium": 1.0
+            }
+        },
+        "recursion+sorting": {
+            "success_rate": 0.7666666666666666,
+            "total_attempts": 2.6666666666666665,
+            "successful_attempts": 2.0,
+            "average_value": 0.2230245833333334,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 10.333333333333334,
+            "visits_by_difficulty": {
+                "very easy": 4.666666666666667,
+                "easy": 4.0,
+                "medium": 5.0,
+                "hard": 4.0
+            }
+        },
+        "recursion+searching": {
+            "success_rate": 0.6666666666666666,
+            "total_attempts": 4.666666666666667,
+            "successful_attempts": 2.6666666666666665,
+            "average_value": 0.23076575000000002,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 1.0
+            },
+            "visits": 18.333333333333332,
+            "visits_by_difficulty": {
+                "very easy": 6.666666666666667,
+                "easy": 5.666666666666667,
+                "medium": 5.5,
+                "hard": 5.0,
+                "very hard": 2.0
+            }
+        },
+        "dynamic_programming+recursion": {
+            "success_rate": 0.7777777777777777,
+            "total_attempts": 2.3333333333333335,
+            "successful_attempts": 1.6666666666666667,
+            "average_value": 0.24391666666666667,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 3.6666666666666665,
+            "visits_by_difficulty": {
+                "very easy": 2.3333333333333335,
+                "easy": 1.5,
+                "medium": 1.0
+            }
+        },
+        "searching+sorting": {
+            "success_rate": 0.7380952380952381,
+            "total_attempts": 4.333333333333333,
+            "successful_attempts": 3.0,
+            "average_value": 0.6107716250000002,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 2.0
+            },
+            "visits": 17.666666666666668,
+            "visits_by_difficulty": {
+                "very easy": 6.333333333333333,
+                "easy": 5.333333333333333,
+                "medium": 4.0,
+                "hard": 3.0,
+                "very hard": 4.0
+            }
+        },
+        "dynamic_programming+sorting": {
+            "success_rate": 0.2857142857142857,
+            "total_attempts": 4.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.05,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 1.0
+            },
+            "visits": 21.0,
+            "visits_by_difficulty": {
+                "very easy": 6.0,
+                "easy": 10.0,
+                "medium": 9.0,
+                "hard": 6.0,
+                "very hard": 5.0
+            }
+        },
+        "algorithms+functions+sorting": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.6075,
+            "difficulty_distribution": {
+                "medium": 1.0
+            },
+            "visits": 2.0,
+            "visits_by_difficulty": {
+                "medium": 2.0
+            }
+        },
+        "algorithms+error_handling+recursion+sorting": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.675,
+            "difficulty_distribution": {
+                "easy": 1.0
+            },
+            "visits": 1.0,
+            "visits_by_difficulty": {
+                "easy": 1.0
+            }
+        },
+        "algorithms+conditionals+data_structures+sorting": {
+            "success_rate": 0.5,
+            "total_attempts": 2.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.09349425000000003,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0
+            },
+            "visits": 13.0,
+            "visits_by_difficulty": {
+                "very easy": 7.0,
+                "easy": 6.0
+            }
+        },
+        "conditionals+functions+loops+searching": {
+            "success_rate": 0.5,
+            "total_attempts": 3.0,
+            "successful_attempts": 1.5,
+            "average_value": 0.20325,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 2.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "very easy": 3.0,
+                "easy": 2.0,
+                "medium": 1.0,
+                "hard": 3.0,
+                "very hard": 3.0
+            }
+        },
+        "data_structures+functions+searching+sorting": {
+            "success_rate": 0.8,
+            "total_attempts": 5.0,
+            "successful_attempts": 4.0,
+            "average_value": 0.58463,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 11.0,
+            "visits_by_difficulty": {
+                "very easy": 5.0,
+                "easy": 3.0,
+                "medium": 2.0,
+                "hard": 1.0
+            }
+        },
+        "algorithms+conditionals+error_handling+sorting": {
+            "success_rate": 0.5,
+            "total_attempts": 2.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.054675,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 5.0,
+            "visits_by_difficulty": {
+                "very easy": 5.0
+            }
+        },
+        "algorithms+data_structures+error_handling+searching": {
+            "success_rate": 1.0,
+            "total_attempts": 4.0,
+            "successful_attempts": 4.0,
+            "average_value": 0.6448125,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 10.0,
+            "visits_by_difficulty": {
+                "very easy": 4.0,
+                "easy": 3.0,
+                "medium": 2.0,
+                "hard": 1.0
+            }
+        },
+        "algorithms+conditionals+dynamic_programming+error_handling": {
+            "success_rate": 0.6666666666666666,
+            "total_attempts": 3.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.13549999999999998,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "very easy": 3.0,
+                "easy": 2.0,
+                "medium": 1.0
+            }
+        },
+        "algorithms+conditionals+error_handling+loops": {
+            "success_rate": 0.6666666666666666,
+            "total_attempts": 3.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.18066666666666667,
+            "difficulty_distribution": {
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "easy": 3.0,
+                "medium": 2.0,
+                "hard": 1.0
+            }
+        },
+        "functions+recursion+sorting": {
+            "success_rate": 0.4,
+            "total_attempts": 5.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.323,
+            "difficulty_distribution": {
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 9.0,
+            "visits_by_difficulty": {
+                "medium": 5.0,
+                "hard": 4.0
+            }
+        },
+        "conditionals+recursion+sorting": {
+            "success_rate": 0.0,
+            "total_attempts": 2.0,
+            "successful_attempts": 0.0,
+            "average_value": 0.28125,
+            "difficulty_distribution": {
+                "medium": 1.0
+            },
+            "visits": 3.0,
+            "visits_by_difficulty": {
+                "medium": 3.0
+            }
+        },
+        "error_handling+functions+loops+sorting": {
+            "success_rate": 1.0,
+            "total_attempts": 3.0,
+            "successful_attempts": 3.0,
+            "average_value": 0.9259166666666667,
+            "difficulty_distribution": {
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "easy": 3.0,
+                "medium": 2.0,
+                "hard": 1.0
+            }
+        },
+        "conditionals+data_structures+functions+loops": {
+            "success_rate": 0.0,
+            "total_attempts": 3.0,
+            "successful_attempts": 0.0,
+            "average_value": 0.024999999999999998,
+            "difficulty_distribution": {
+                "hard": 1.0
+            },
+            "visits": 3.0,
+            "visits_by_difficulty": {
+                "hard": 3.0
+            }
+        },
+        "conditionals+dynamic_programming+recursion+searching": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.625,
+            "difficulty_distribution": {
+                "easy": 1.0
+            },
+            "visits": 1.0,
+            "visits_by_difficulty": {
+                "easy": 1.0
+            }
+        },
+        "conditionals+loops": {
+            "success_rate": 0.3333333333333333,
+            "total_attempts": 3.5,
+            "successful_attempts": 2.0,
+            "average_value": 0.065356625,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0,
+                "very hard": 1.0
+            },
+            "visits": 12.5,
+            "visits_by_difficulty": {
+                "very easy": 4.0,
+                "easy": 6.0,
+                "medium": 5.0,
+                "hard": 4.0,
+                "very hard": 2.0
+            }
+        },
+        "algorithms+conditionals": {
+            "success_rate": 0.75,
+            "total_attempts": 1.5,
+            "successful_attempts": 1.0,
+            "average_value": 0.09637500000000002,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0
+            },
+            "visits": 5.0,
+            "visits_by_difficulty": {
+                "very easy": 4.5,
+                "easy": 1.0
+            }
+        },
+        "conditionals+dynamic_programming": {
+            "success_rate": 0.0,
+            "total_attempts": 2.0,
+            "successful_attempts": 0.0,
+            "average_value": 0.075,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 2.0,
+            "visits_by_difficulty": {
+                "very easy": 2.0
+            }
+        },
+        "data_structures+functions": {
+            "success_rate": 0.5,
+            "total_attempts": 6.0,
+            "successful_attempts": 3.0,
+            "average_value": 0.0,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 18.0,
+            "visits_by_difficulty": {
+                "very easy": 6.0,
+                "easy": 5.0,
+                "medium": 4.0,
+                "hard": 3.0
+            }
+        },
+        "functions+recursion": {
+            "success_rate": 0.6666666666666666,
+            "total_attempts": 3.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.09033333333333333,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "very easy": 3.0,
+                "easy": 2.0,
+                "medium": 1.0
+            }
+        },
+        "algorithms+searching": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.42810524999999994,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "very easy": 6.0
+            }
+        },
+        "error_handling+recursion": {
+            "success_rate": 0.5,
+            "total_attempts": 1.0,
+            "successful_attempts": 0.5,
+            "average_value": 0.21250000000000002,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 1.0,
+            "visits_by_difficulty": {
+                "very easy": 1.0
+            }
+        },
+        "algorithms+dynamic_programming+recursion": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.325,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 1.0,
+            "visits_by_difficulty": {
+                "very easy": 1.0
+            }
+        },
+        "functions+loops+recursion+searching": {
+            "success_rate": 0.6666666666666666,
+            "total_attempts": 3.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.31616666666666665,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "very easy": 3.0,
+                "easy": 2.0,
+                "medium": 1.0
+            }
+        },
+        "algorithms+data_structures+recursion": {
+            "success_rate": 0.25,
+            "total_attempts": 8.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.24286862812500004,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 38.0,
+            "visits_by_difficulty": {
+                "very easy": 11.0,
+                "easy": 10.0,
+                "medium": 9.0,
+                "hard": 8.0
+            }
+        },
+        "dynamic_programming+loops+sorting": {
+            "success_rate": 0.5,
+            "total_attempts": 2.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.02375000000000001,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0
+            },
+            "visits": 3.0,
+            "visits_by_difficulty": {
+                "very easy": 2.0,
+                "easy": 1.0
+            }
+        },
+        "algorithms+data_structures+loops+sorting": {
+            "success_rate": 1.0,
+            "total_attempts": 5.0,
+            "successful_attempts": 5.0,
+            "average_value": 0.5118875,
+            "difficulty_distribution": {
+                "very easy": 2.0,
+                "easy": 2.0,
+                "medium": 1.0
+            },
+            "visits": 15.0,
+            "visits_by_difficulty": {
+                "very easy": 8.0,
+                "easy": 6.0,
+                "medium": 1.0
+            }
+        },
+        "algorithms+error_handling+searching": {
+            "success_rate": 1.0,
+            "total_attempts": 2.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.5020987499999999,
+            "difficulty_distribution": {
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 9.0,
+            "visits_by_difficulty": {
+                "medium": 5.0,
+                "hard": 4.0
+            }
+        },
+        "algorithms+data_structures+searching+sorting": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.5872499999999999,
+            "difficulty_distribution": {
+                "medium": 1.0
+            },
+            "visits": 3.0,
+            "visits_by_difficulty": {
+                "medium": 3.0
+            }
+        },
+        "conditionals+data_structures+searching+sorting": {
+            "success_rate": 1.0,
+            "total_attempts": 3.0,
+            "successful_attempts": 3.0,
+            "average_value": 0.7174999999999999,
+            "difficulty_distribution": {
+                "easy": 1.0,
+                "medium": 2.0
+            },
+            "visits": 4.0,
+            "visits_by_difficulty": {
+                "easy": 2.0,
+                "medium": 2.0
+            }
+        },
+        "data_structures+error_handling+loops+searching": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.0,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 5.0,
+            "visits_by_difficulty": {
+                "very easy": 5.0
+            }
+        },
+        "data_structures+loops+searching+sorting": {
+            "success_rate": 0.25,
+            "total_attempts": 4.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.0,
+            "difficulty_distribution": {
+                "hard": 1.0,
+                "very hard": 1.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "hard": 4.0,
+                "very hard": 2.0
+            }
+        },
+        "conditionals+error_handling+loops+recursion": {
+            "success_rate": 1.0,
+            "total_attempts": 2.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.21375,
+            "difficulty_distribution": {
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 5.0,
+            "visits_by_difficulty": {
+                "easy": 3.0,
+                "medium": 2.0
+            }
+        },
+        "algorithms+conditionals+loops+recursion": {
+            "success_rate": 0.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 0.0,
+            "average_value": 0.25,
+            "difficulty_distribution": {
+                "easy": 1.0
+            },
+            "visits": 1.0,
+            "visits_by_difficulty": {
+                "easy": 1.0
+            }
+        },
+        "dynamic_programming+functions+searching": {
+            "success_rate": 0.25,
+            "total_attempts": 4.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.3439000000000001,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 10.0,
+            "visits_by_difficulty": {
+                "very easy": 4.0,
+                "easy": 3.0,
+                "medium": 2.0,
+                "hard": 1.0
+            }
+        },
+        "algorithms+conditionals+data_structures+searching": {
+            "success_rate": 1.0,
+            "total_attempts": 2.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.662625,
+            "difficulty_distribution": {
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 5.0,
+            "visits_by_difficulty": {
+                "medium": 3.0,
+                "hard": 2.0
+            }
+        },
+        "conditionals+dynamic_programming+functions+searching": {
+            "success_rate": 0.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 0.0,
+            "average_value": 0.3,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 1.0,
+            "visits_by_difficulty": {
+                "very easy": 1.0
+            }
+        },
+        "functions+loops": {
+            "success_rate": 0.5,
+            "total_attempts": 2.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.17313750000000003,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0
+            },
+            "visits": 9.0,
+            "visits_by_difficulty": {
+                "very easy": 5.0,
+                "easy": 4.0
+            }
+        },
+        "algorithms+recursion+sorting": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.30375,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 3.0,
+            "visits_by_difficulty": {
+                "very easy": 3.0
+            }
+        },
+        "algorithms+functions+recursion+sorting": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.3375,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 2.0,
+            "visits_by_difficulty": {
+                "very easy": 2.0
+            }
+        },
+        "algorithms+functions+recursion+searching": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.375,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 1.0,
+            "visits_by_difficulty": {
+                "very easy": 1.0
+            }
+        },
+        "data_structures+dynamic_programming+error_handling+functions": {
+            "success_rate": 0.5,
+            "total_attempts": 6.0,
+            "successful_attempts": 3.0,
+            "average_value": 0.07904166666666666,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 13.0,
+            "visits_by_difficulty": {
+                "very easy": 6.0,
+                "easy": 4.0,
+                "medium": 3.0
+            }
+        },
+        "data_structures+functions+loops": {
+            "success_rate": 0.6666666666666666,
+            "total_attempts": 3.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.22583333333333333,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 6.0,
+            "visits_by_difficulty": {
+                "very easy": 3.0,
+                "easy": 2.0,
+                "medium": 1.0
+            }
+        },
+        "conditionals+data_structures+dynamic_programming+sorting": {
+            "success_rate": 0.5,
+            "total_attempts": 2.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.28500000000000003,
+            "difficulty_distribution": {
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 3.0,
+            "visits_by_difficulty": {
+                "easy": 2.0,
+                "medium": 1.0
+            }
+        },
+        "algorithms+dynamic_programming+error_handling+loops": {
+            "success_rate": 0.6,
+            "total_attempts": 5.0,
+            "successful_attempts": 3.0,
+            "average_value": 0.636215,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0,
+                "medium": 1.0,
+                "hard": 1.0
+            },
+            "visits": 13.0,
+            "visits_by_difficulty": {
+                "very easy": 5.0,
+                "easy": 4.0,
+                "medium": 3.0,
+                "hard": 1.0
+            }
+        },
+        "conditionals+dynamic_programming+functions+loops": {
+            "success_rate": 0.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 0.0,
+            "average_value": 0.05,
+            "difficulty_distribution": {
+                "hard": 1.0
+            },
+            "visits": 1.0,
+            "visits_by_difficulty": {
+                "hard": 1.0
+            }
+        },
+        "conditionals+loops+searching+sorting": {
+            "success_rate": 0.5,
+            "total_attempts": 2.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.11875,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0
+            },
+            "visits": 3.0,
+            "visits_by_difficulty": {
+                "very easy": 2.0,
+                "easy": 1.0
+            }
+        },
+        "conditionals+loops+recursion+searching": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.2187,
+            "difficulty_distribution": {
+                "very easy": 1.0
+            },
+            "visits": 4.0,
+            "visits_by_difficulty": {
+                "very easy": 4.0
+            }
+        },
+        "algorithms+conditionals+functions+sorting": {
+            "success_rate": 0.16666666666666666,
+            "total_attempts": 6.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.04750000000000001,
+            "difficulty_distribution": {
+                "hard": 1.0,
+                "very hard": 1.0
+            },
+            "visits": 11.0,
+            "visits_by_difficulty": {
+                "hard": 6.0,
+                "very hard": 5.0
+            }
+        },
+        "algorithms+data_structures+sorting": {
+            "success_rate": 0.5,
+            "total_attempts": 2.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.11875,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0
+            },
+            "visits": 3.0,
+            "visits_by_difficulty": {
+                "very easy": 2.0,
+                "easy": 1.0
+            }
+        },
+        "conditionals+functions+recursion+searching": {
+            "success_rate": 1.0,
+            "total_attempts": 1.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.48600000000000004,
+            "difficulty_distribution": {
+                "easy": 1.0
+            },
+            "visits": 3.0,
+            "visits_by_difficulty": {
+                "easy": 3.0
+            }
+        },
+        "conditionals+data_structures+error_handling+searching": {
+            "success_rate": 1.0,
+            "total_attempts": 2.0,
+            "successful_attempts": 2.0,
+            "average_value": 0.5700000000000001,
+            "difficulty_distribution": {
+                "very easy": 1.0,
+                "easy": 1.0
+            },
+            "visits": 3.0,
+            "visits_by_difficulty": {
+                "very easy": 2.0,
+                "easy": 1.0
+            }
+        },
+        "dynamic_programming+loops+recursion+searching": {
+            "success_rate": 0.5,
+            "total_attempts": 2.0,
+            "successful_attempts": 1.0,
+            "average_value": 0.14250000000000002,
+            "difficulty_distribution": {
+                "easy": 1.0,
+                "medium": 1.0
+            },
+            "visits": 3.0,
+            "visits_by_difficulty": {
+                "easy": 2.0,
+                "medium": 1.0
+            }
+        },
+        "data_structures+error_handling+recursion+sorting": {
+            "success_rate": 0.0,
+            "total_attempts": 2.0,
+            "successful_attempts": 0.0,
+            "average_value": 0.0,
+            "difficulty_distribution": {
+                "medium": 1.0
+            },
+            "visits": 2.0,
+            "visits_by_difficulty": {
+                "medium": 2.0
+            }
+        }
+    }
+}
