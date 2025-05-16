@@ -3,3 +3,9 @@ langchain_core
 langchain_openai
 loguru
 graphviz
+scipy
+numpy
+matplotlib
+seaborn
+pandas
+sklearn
