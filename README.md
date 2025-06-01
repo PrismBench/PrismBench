@@ -22,7 +22,7 @@ pip install -r requirements.txt
 docker compose up
 ```
 
-**📖 [See detailed setup guide →](docs/quickstart.md)**
+**📖 [See detailed setup guide →](docs/Quick-Start.md)**
 
 ## Key Features
 
