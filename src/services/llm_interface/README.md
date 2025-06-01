@@ -1,7 +1,7 @@
 # LLM Interface Service
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://python.org)
 [![LangChain](https://img.shields.io/badge/LangChain-🦜-green.svg)](https://langchain.com)
 
 > A FastAPI-based microservice for interacting with LLMs through a unified, extensible interface. Supports both direct LLM chat and agentic workflows, with modular configuration and robust async processing.

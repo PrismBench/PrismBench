@@ -2,7 +2,7 @@
 
 **Systematic evaluation of language models through Monte Carlo Tree Search**
 
-[![Documentation](https://img.shields.io/badge/docs-wiki-green.svg)](Home) [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://github.com/PrismBench/PrismBench) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/PrismBench/PrismBench/blob/main/LICENSE)
+[![Documentation](https://img.shields.io/badge/docs-wiki-green.svg)](Home) [![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://github.com/PrismBench/PrismBench) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/PrismBench/PrismBench/blob/main/LICENSE)
 
 ---
 
@@ -46,6 +46,17 @@ PrismBench is a comprehensive framework for evaluating Large Language Model capa
 |-------|-------------|---------------|
 | **Results Analysis** | Understanding and interpreting evaluation results | [Results Analysis →](Results-Analysis) |
 | **Tree Structure** | Search tree implementation and concept organization | [Tree Structure →](Tree-Structure) |
+
+---
+## Extending PrismBench
+
+PrismBench is designed to be extensible, allowing you to add custom agents, environments, and MCTS phases.
+
+- [Extending PrismBench →](Extending-PrismBench)
+- [Custom Agents →](Custom-Agents)
+- [Custom Environments →](Custom-Environments)
+- [Custom MCTS Phases →](Custom-MCTS-Phases)
+- [Extension Combinations →](Extension-Combinations)
 
 ---
 

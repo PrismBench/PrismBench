@@ -12,24 +12,25 @@
 
 **🧠 MCTS System**
 - [🔍 MCTS Algorithm](MCTS-Algorithm)
+- [🔍 Core MCTS Process](MCTS-Algorithm#core-mcts-process)
+- [🔍 Key Components](MCTS-Algorithm#key-components)
+- [🔍 PrismBench's Three-Phase MCTS](MCTS-Algorithm#prismbenchs-three-phase-mcts)
 - [🌳 Tree Structure](Tree-Structure)
+- [🌳 Node Structure](Tree-Structure#node-structure)
 
 **🤖 Agent System**  
 - [🤖 Agent Overview](Agent-System)
-- [🎭 Agent Roles](Agent-System#agent-roles)
-- [🔧 Agent Configuration](Agent-System#configuration)
+- [🎭 Agent Roles](Agent-System#agent-roles-and-responsibilities)
+- [🔧 Agent Configuration](Agent-System#agent-configuration-system)
+- [🔧 Agent Workflows](Agent-System#agent-workflows)
+- [🔧 Agent Communication](Agent-System#agent-communication)
 
 **🌍 Environment System**
 - [🌍 Environment Overview](Environment-System)
 - [🏗️ Environment Types](Environment-System#environment-types)
-- [⚙️ Environment Setup](Environment-System#configuration)
-
----
-
-### 📊 **Analysis & Results**
-- [📈 Results Analysis](Results-Analysis)
-- [📊 Performance Metrics](Results-Analysis#performance-metrics)
-- [📉 Visualization](Results-Analysis#visualization)
+- [🔧 Environment Registry](Environment-System#environment-registry-system)
+- [🔧 Agent Integration](Environment-System#agent-integration)
+- [🔧 Environment Configuration](Environment-System#configuration-system)
 
 ---
 
@@ -37,14 +38,10 @@
 
 **📋 Main Configuration**
 - [⚙️ Configuration Overview](Configuration-Overview)
-- [🔗 Environment Configs](Configuration-Overview#environment-configurations)
-- [🔄 Phase Configurations](Configuration-Overview#phase-configurations)
-- [🌳 Tree Configurations](Configuration-Overview#tree-configurations)
-
-**🤖 Agent Configuration**
-- [🎭 Agent Definitions](Agent-System#configuration)
-- [📝 Interaction Templates](Agent-System#interaction-templates)
-- [🔧 Agent Parameters](Agent-System#agent-parameters)
+- [🔗 Agent Configurations](Configuration-Overview#1-agent-configurations)
+- [🔗 Environment Configurations](Configuration-Overview#2-environment-configurations)
+- [🔗 Phase Configurations](Configuration-Overview#3-phase-configurations)
+- [🌳 Tree Configurations](Configuration-Overview#4-tree-configurations)
 
 ---
 
@@ -55,11 +52,14 @@
 - [🤖 Custom Agents](Custom-Agents)
 - [🌍 Custom Environments](Custom-Environments)
 - [🔍 Custom MCTS Phases](Custom-MCTS-Phases)
+- [🔗 Extension Combinations](Extension-Combinations)
 
-**📖 API Reference**
-- [🔌 LLM Interface API](../src/services/llm_interface/README.md)
-- [🌍 Environment API](../src/services/environment/README.md)
-- [🔍 Search API](../src/services/search/README.md)
+---
+
+### 📊 **Analysis & Results**
+- [📈 Results Analysis](Results-Analysis)
+- [📊 Performance Metrics](Results-Analysis#performance-metrics)
+- [📉 Visualization](Results-Analysis#visualization)
 
 ---
 

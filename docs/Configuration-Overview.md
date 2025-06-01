@@ -110,7 +110,7 @@ interaction_templates:
 | `test_error_analyzer` | Analyzes test failures | Failure categorization, root cause analysis |
 | `solution_pattern_analyzer` | Analyzes code patterns | Pattern recognition, complexity analysis |
 
-## 2. Environment Configuration (`configs/environment_config.yaml`)
+## 2. Environment Configurations (`configs/environment_config.yaml`)
 
 Defines available execution environments and their agent compositions.
 

@@ -1,7 +1,7 @@
 # Environment Service
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://python.org)
 [![Docker](https://img.shields.io/badge/Docker-ready-blue.svg)](https://docker.com)
 
 > A flexible, containerized microservice for managing coding challenges, test generation, and solution evaluation with pluggable environment strategies.
