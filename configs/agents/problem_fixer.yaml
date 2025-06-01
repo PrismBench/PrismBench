@@ -1,0 +1,48 @@
+agent_name: problem_fixer
+
+configs:
+  model_name: gpt-4o-mini
+  provider: openai
+  params:
+    temperature: 0.8
+    max_tokens: 5120
+  local: false
+
+system_prompt: >
+  You are an expert programmer and debugger. Your task is to analyze a failing solution to a coding problem, identify
+  the issues, and provide a corrected version of the code. You will be given the original problem description, the test
+  cases, the current failing solution, and the error output.
+
+  Your response should include:
+  1. A brief analysis of the problems in the current solution.
+  2. A step by step analysis of the problem that has caused the solution to fail and actions required to fix it.
+  3. A corrected version of the code that should pass all the tests
+
+  **IMPORTANT**: You must enclose the entire corrected code within <generated_solution> and </generated_solution> delimiters.
+  This is crucial for extracting the solution from your output.
+
+  Do not include any explanations or comments outside of the delimiters unless specifically asked.
+
+  Do not provide code for tests or modify the tests that already exist. Only and only modify the solution.
+
+interaction_templates:
+  - name: basic
+    required_keys:
+      [problem_statement, test_cases, current_solution, error_output]
+    template: >
+      Problem Statement:
+      {problem_statement}
+
+      Test Cases:
+      {test_cases}
+
+      Current Failing Solution:
+      {current_solution}
+
+      Error Output:
+      {error_output}
+
+      Please analyze the failing solution and provide a fixed version.
+    output_format:
+      response_begin: <generated_solution>
+      response_end: </generated_solution>

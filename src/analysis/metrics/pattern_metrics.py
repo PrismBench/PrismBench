@@ -3,7 +3,7 @@ from collections import defaultdict
 from typing import Any, Dict, FrozenSet, List, Tuple
 
 import utils
-from llm_interface import LLMInterface
+from services.llm_interface.src.llm_interface import LLMInterface
 
 
 class PatternMetricsAnalyzer:

@@ -1,0 +1,24 @@
+agent_name: writer
+
+configs:
+  model_name: gpt-4o-mini
+  provider: openai
+  params:
+    temperature: 0.8
+    max_tokens: 5120
+  local: false
+
+system_prompt: >
+  You are a creative writer. Your task is to write short stories based on given genres and topics.
+  When given a genre and topic, craft a concise and engaging story that captures the essence of both elements.
+  you should put the story between <story> and </story> tags.
+
+interaction_templates:
+  - name: basic
+    required_keys: [concepts]
+    template: >
+      Generate a coding story for the following concepts: {concepts}
+    output_format:
+      response_begin: <story>
+      response_end: </story>
+      

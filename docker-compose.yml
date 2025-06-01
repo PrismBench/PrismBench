@@ -1,0 +1,96 @@
+services:
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      
+  llm-interface:
+    build:
+      context: ./src/services/llm_interface
+      dockerfile: Dockerfile
+    env_file:
+      - ./apis.key
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./configs:/app/configs
+      - ./apis.key:/app/apis.key
+      - ./src/services/llm_interface:/app
+    environment:
+      - PYTHONPATH=/app
+      - AGENT_CONFIGS_FILE=/app/configs/agents.yml
+      - REDIS_URL=redis://redis:6379
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8000/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      redis:
+        condition: service_healthy
+  node-env:
+    build:
+      context: ./src/services/environment
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./configs:/app/configs
+      - ./src/services/environment/src:/app/src
+    environment:
+      - PYTHONPATH=/app
+      - LLM_SERVICE_URL=http://llm-interface:8000
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8001/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      - llm-interface
+  search:
+    build:
+      context: ./src/services/search
+      dockerfile: Dockerfile
+    ports:
+      - "8002:8000"
+    volumes:
+      - ./configs:/app/configs
+      - ./src/services/search/src:/app/src
+    environment:
+      - PYTHONPATH=/app
+      - LLM_SERVICE_URL=http://llm-interface:8000
+      - ENV_SERVICE_URL=http://node-env:8000
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8002/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      - llm-interface
+      - node-env
+
+  interface:
+    build:
+      context: ./src/services/interface
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80" # Host port 3000 mapped to container port 80 (Nginx default)
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"] # Basic check for Nginx
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s

@@ -1,0 +1,19 @@
+tree_configs:
+  concepts:
+    - loops
+    - conditionals
+    - functions
+    - data_structures
+    - algorithms
+    - error_handling
+    - recursion
+    - sorting
+    - searching
+    - dynamic_programming
+
+  difficulties:
+    - very easy
+    - easy
+    - medium
+    - hard
+    - very hard

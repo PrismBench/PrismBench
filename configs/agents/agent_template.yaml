@@ -1,0 +1,17 @@
+agent_name: this is where the agent name goes. it should follow snake case. for example, "challenge_designer". this name will be user for defining the agent throughout the framework.
+
+configs:
+  provider: this is where the provider goes. it should be a string that will be used as the provider for the agent. for example "openai" or "anthropic".
+  model_name: this is where the model name goes. it should be a string that will be used to define the model for the agent. this comes from the provider directly. for example "gpt-4o-mini" or "claude-3-5-sonnet-20240620".
+  params:
+    temperature: this is where the temperature goes. it should be a float that will be used to define the temperature for the agent. for example 0.7 or 0.3.
+    max_tokens: this is where the max tokens goes. it should be an integer that will be used to define the max tokens for the agent. for example 256 or 1024.
+  local: this is where the local goes. it should be a boolean that will be used to determine if the agent is local or not.
+
+system_prompt: this is where the system prompt goes. it should be a string that will be used as the system prompt for the agent.
+
+interaction_templates:
+  - name: this is where the name of the interaction template goes. it should be a string that will be used to define the name of the interaction template for the agent. for example "basic" or "advanced".
+    required_keys: this is where the required keys go. it should be a list of strings that will be used to define the required keys for the interaction template for the agent. for example ["concepts", "difficulty_level"] or ["concepts", "difficulty_level", "additional_instructions"].
+    template: this is where the template goes. it should be a string that will be used as the template for the interaction template for the agent.
+    output_format: this is where the output format goes. it should be a list of strings that will be used to define the output format for the interaction template for the agent. for example ["response_begin", "response_end"] or ["response_begin", "response_end", "response_middle"].

@@ -1,0 +1,21 @@
+environment_coding_challenge:
+  agents:
+    - "challenge_designer"
+    - "test_generator"
+    - "problem_solver"
+    - "problem_fixer"
+  max_attempts: 3
+  timeout: 300
+  num_problems: 1
+
+environment_enhanced_coding_challenge:
+  agents:
+    - "challenge_designer_advanced"
+    - "test_generator"
+    - "problem_solver"
+    - "problem_fixer"
+    - "test_validator"
+    - "test_error_analyzer"
+  max_attempts: 3
+  timeout: 600
+  num_problems: 5
