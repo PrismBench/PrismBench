@@ -47,7 +47,7 @@ PrismBench/
 
 ## 📚 Documentation
 
-> **🌟 [Visit our wiki →](docs/README.md)**
+> **🌟 [Visit our wiki →](docs/Home.md)**
 
 <table>
 <tr>
@@ -55,18 +55,18 @@ PrismBench/
 
 ### 🚀 **Getting Started**
 - [📖 **Complete Wiki**](docs/README.md) - Comprehensive documentation
-- [⚡ Quick Start Guide](docs/quickstart.md) - Get running in 5 minutes  
-- [🏗️ Architecture Overview](docs/architecture.md) - System design
-- [⚙️ Configuration Guide](docs/config-overview.md) - Setup and customization
+- [⚡ Quick Start Guide](docs/Quick-Start.md) - Get running in 5 minutes  
+- [🏗️ Architecture Overview](docs/Architecture-Overview.md) - System design
+- [⚙️ Configuration Guide](docs/Configuration-Overview.md) - Setup and customization
 
 </td>
 <td width="50%">
 
 ### 🎯 **Core Concepts**
-- [🧠 MCTS Algorithm](docs/mcts.md) - Core algorithm details
-- [🤖 Agent System](docs/agents.md) - Multi-agent architecture
-- [🌍 Environment System](docs/environments.md) - Evaluation environments
-- [📊 Results Analysis](docs/analysis.md) - Understanding outputs
+- [🧠 MCTS Algorithm](docs/MCTS-Algorithm.md) - Core algorithm details
+- [🤖 Agent System](docs/Agent-System.md) - Multi-agent architecture
+- [🌍 Environment System](docs/Environment-System.md) - Evaluation environments
+- [📊 Results Analysis](docs/Results-Analysis.md) - Understanding outputs
 
 </td>
 </tr>
