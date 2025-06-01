@@ -94,7 +94,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 If you use PrismBench in your research, please cite:
 ```bibtex
 @software{prismbench,
-  title={PrismBench: LLM Capability Mapping Framework},
+  title={PrismBench: Dynamic and Flexible Benchmarking of LLMs Code Generation with Monte Carlo Tree Search},
   author={anonymous},
   year={2025},
   url={https://github.com/PrismBench/PrismBench}
