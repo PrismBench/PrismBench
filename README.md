@@ -54,7 +54,7 @@ PrismBench/
 <td width="50%">
 
 ### 🚀 **Getting Started**
-- [📖 **Complete Wiki**](docs/README.md) - Comprehensive documentation
+- [📖 **Complete Wiki**](docs/Home.md) - Comprehensive documentation
 - [⚡ Quick Start Guide](docs/Quick-Start.md) - Get running in 5 minutes  
 - [🏗️ Architecture Overview](docs/Architecture-Overview.md) - System design
 - [⚙️ Configuration Guide](docs/Configuration-Overview.md) - Setup and customization
