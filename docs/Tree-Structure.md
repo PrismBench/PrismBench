@@ -1,13 +1,5 @@
 # 🌳 Tree Structure
 
-*This page contains the content from the original tree-structure.md file - you'll need to copy the content from that file here for GitHub Wiki compatibility.*
-
-For now, this is a placeholder. Please copy the content from `docs/tree-structure.md` to this file.
-
----
-
-**[⬅️ Back to Results Analysis](Results-Analysis)** | **[Troubleshooting ➡️](Troubleshooting)**
-
 The search tree is the core data structure in PrismBench's MCTS algorithm. It represents the exploration space of concept-difficulty combinations and tracks the evaluation history for intelligent search guidance.
 
 ## Tree Architecture

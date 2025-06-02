@@ -1,13 +1,5 @@
 # 🔧 Troubleshooting
 
-*This page contains the content from the original troubleshooting.md file - you'll need to copy the content from that file here for GitHub Wiki compatibility.*
-
-For now, this is a placeholder. Please copy the content from `docs/troubleshooting.md` to this file.
-
----
-
-**[⬅️ Back to Tree Structure](Tree-Structure)** | **[Back to Home 🏠](Home)**
-
 # Troubleshooting Guide
 
 This guide covers common issues, error messages, and solutions when working with PrismBench. Use this as your first reference when encountering problems.

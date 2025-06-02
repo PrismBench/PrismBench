@@ -1,6 +1,6 @@
 # Monte Carlo Tree Search (MCTS) Algorithm
 
-This document provides a comprehensive explanation of how PrismBench uses Monte Carlo Tree Search to evaluate LLM capabilities.
+This guide provides a comprehensive explanation of how PrismBench uses Monte Carlo Tree Search to evaluate LLM capabilities.
 
 ## Overview
 

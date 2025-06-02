@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This document provides a comprehensive overview of PrismBench's architecture, design principles, and component interactions.
+This guide provides a comprehensive overview of PrismBench's architecture, design principles, and component interactions.
 
 ## System Architecture
 
