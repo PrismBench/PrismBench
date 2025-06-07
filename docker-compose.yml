@@ -36,6 +36,7 @@ services:
     depends_on:
       redis:
         condition: service_healthy
+
   node-env:
     build:
       context: ./src/services/environment
@@ -57,6 +58,7 @@ services:
       start_period: 10s
     depends_on:
       - llm-interface
+
   search:
     build:
       context: ./src/services/search
@@ -81,16 +83,20 @@ services:
       - llm-interface
       - node-env
 
-  interface:
+  gui:
     build:
-      context: ./src/services/interface
+      context: ./src/services/gui
       dockerfile: Dockerfile
     ports:
-      - "3000:80" # Host port 3000 mapped to container port 80 (Nginx default)
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8002/
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost/"] # Basic check for Nginx
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 10s
+    depends_on:
+      - search

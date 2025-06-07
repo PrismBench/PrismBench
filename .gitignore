@@ -35,9 +35,8 @@ experiments/concept_distribution_table.tex
 .cursor/
 .vscode/
 
-
 # Docker copied directories
 src/services/*/configs/
 src/services/llm_interface/logs/llm_interface.log
-src/services/interface/package-lock.json
+src/services/gui/package-lock.json
 
