@@ -22,6 +22,8 @@ pip install -r requirements.txt
 docker compose up
 ```
 
+Once running, the web interface is available at [http://localhost:3000](http://localhost:3000).
+
 **📖 [See detailed setup guide →](docs/Quick-Start.md)**
 
 ## Key Features
@@ -40,33 +42,33 @@ PrismBench/
 │   ├── llm_interface/     # LLM communication layer
 │   ├── environment/       # Challenge execution environment  
 │   ├── search/           # MCTS implementation
-│   └── interface/         # shadcdn-based interface for interacting with the framework
+│   └── gui/              # shadcdn-based interface for interacting with the framework
 ├── configs/              # Configuration files
 └── docs/                # Comprehensive documentation wiki
 ```
 
 ## 📚 Documentation
 
-> **🌟 [Visit our wiki →](docs/Home.md)**
+> **🌟 [Visit our wiki →](https://github.com/PrismBench/PrismBench/wiki)**
 
 <table>
 <tr>
 <td width="50%">
 
 ### 🚀 **Getting Started**
-- [📖 **Complete Wiki**](docs/Home.md) - Comprehensive documentation
-- [⚡ Quick Start Guide](docs/Quick-Start.md) - Get running in 5 minutes  
-- [🏗️ Architecture Overview](docs/Architecture-Overview.md) - System design
-- [⚙️ Configuration Guide](docs/Configuration-Overview.md) - Setup and customization
+- [📖 **Complete Wiki**](https://github.com/PrismBench/PrismBench/wiki) - Comprehensive documentation
+- [⚡ Quick Start Guide](https://github.com/PrismBench/PrismBench/wiki/Quick-Start) - Get running in 5 minutes  
+- [🏗️ Architecture Overview](https://github.com/PrismBench/PrismBench/wiki/Architecture-Overview) - System design
+- [⚙️ Configuration Guide](https://github.com/PrismBench/PrismBench/wiki/Configuration-Overview) - Setup and customization
 
 </td>
 <td width="50%">
 
 ### 🎯 **Core Concepts**
-- [🧠 MCTS Algorithm](docs/MCTS-Algorithm.md) - Core algorithm details
-- [🤖 Agent System](docs/Agent-System.md) - Multi-agent architecture
-- [🌍 Environment System](docs/Environment-System.md) - Evaluation environments
-- [📊 Results Analysis](docs/Results-Analysis.md) - Understanding outputs
+- [🧠 MCTS Algorithm](https://github.com/PrismBench/PrismBench/wiki/MCTS-Algorithm) - Core algorithm details
+- [🤖 Agent System](https://github.com/PrismBench/PrismBench/wiki/Agent-System) - Multi-agent architecture
+- [🌍 Environment System](https://github.com/PrismBench/PrismBench/wiki/Environment-System) - Evaluation environments
+- [📊 Results Analysis](https://github.com/PrismBench/PrismBench/wiki/Results-Analysis) - Understanding outputs
 
 </td>
 </tr>
@@ -76,6 +78,7 @@ PrismBench/
 
 | Component | Purpose | Documentation |
 |-----------|---------|---------------|
+| 🎨 **GUI** | Web interface for the framework | [📖 README](src/services/gui/README.md) |
 | 🤖 **LLM Interface** | Model communication | [📖 README](src/services/llm_interface/README.md) |
 | 🌍 **Environment** | Code execution | [📖 README](src/services/environment/README.md) |
 | 🔍 **Search** | MCTS implementation | [📖 README](src/services/search/README.md) |
@@ -94,7 +97,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 If you use PrismBench in your research, please cite:
 ```bibtex
 @software{prismbench,
-  title={PrismBench: Dynamic and Flexible Benchmarking of LLMs Code Generation with Monte Carlo Tree Search},
+  title={PrismBench: LLM Capability Mapping Framework},
   author={anonymous},
   year={2025},
   url={https://github.com/PrismBench/PrismBench}
