@@ -6,12 +6,19 @@ from dotenv import load_dotenv
 from langchain_anthropic import ChatAnthropic
 from langchain_core.callbacks import StdOutCallbackHandler
 from langchain_core.language_models import BaseChatModel
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
+from langchain_core.messages import (
+    AIMessage,
+    BaseMessage,
+    HumanMessage,
+    SystemMessage,
+)
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import Runnable
 from langchain_core.tools import BaseTool, tool
 from langchain_openai import ChatOpenAI
+from langchain_ollama import ChatOllama
+
 from loguru import logger
 
 from .prompt_manager import PromptManager
@@ -81,7 +88,9 @@ class LLMInterface:
         self.role: Optional[str] = prompt_manager.name
         self.configs: Optional[Dict[str, Any]] = prompt_manager.configs
         self.system_prompt: Optional[str] = prompt_manager.system_prompt
-        self.interaction_templates: Optional[Dict[str, Any]] = prompt_manager.interaction_templates
+        self.interaction_templates: Optional[Dict[str, Any]] = (
+            prompt_manager.interaction_templates
+        )
 
         self.providers = providers
         self.model: Optional[BaseChatModel] = None
@@ -108,11 +117,15 @@ class LLMInterface:
             if self.model:
                 # Reset conversation history when changing roles
                 self.conversation_history = []
-                logger.info(f"Model '{self.configs.get('model_name')}' loaded for role '{self.role}'")
+                logger.info(
+                    f"Model '{self.configs.get('model_name')}' loaded for role '{self.role}'"
+                )
                 return True
             return False
         except Exception as e:
-            logger.exception(f"Failed to initialize LLM for role '{self.role}': {e}")
+            logger.exception(
+                f"Failed to initialize LLM for role '{self.role}': {e}"
+            )
             return False
 
     def _create_llm_instance(
@@ -139,35 +152,60 @@ class LLMInterface:
 
             # Handle different providers
             if not provider_config:
-                logger.error(f"Configuration not found for provider '{provider}'")
+                logger.error(
+                    f"Configuration not found for provider '{provider}'"
+                )
                 return None
 
             # Handle OpenAI-compatible providers (OpenAI, DeepSeek, TogetherAI, Local)
-            if provider in ["openai", "deepseek", "togetherai", "local"]:
+            if provider in ["openai", "deepseek", "togetherai"]:
                 api_key = provider_config.get("api_key")
                 base_url = provider_config.get("base_url")
 
                 if not api_key:
-                    logger.error(f"API key not found for provider '{provider}' in configuration.")
+                    logger.error(
+                        f"API key not found for provider '{provider}' in configuration."
+                    )
                     return None
                 if not base_url:
-                    logger.error(f"Base URL not found for provider '{provider}' in configuration.")
+                    logger.error(
+                        f"Base URL not found for provider '{provider}' in configuration."
+                    )
                     return None
 
                 model_params["api_key"] = api_key
                 model_params["base_url"] = base_url
 
-                return ChatOpenAI(model=model_name, callbacks=callbacks, **model_params)
+                return ChatOpenAI(
+                    model=model_name, callbacks=callbacks, **model_params
+                )
 
             elif provider == "anthropic":
                 api_key = os.getenv("ANTHROPIC_API_KEY", "")
                 if not api_key:
-                    logger.error("ANTHROPIC_API_KEY not found in environment variables for provider 'anthropic'")
+                    logger.error(
+                        "ANTHROPIC_API_KEY not found in environment variables for provider 'anthropic'"
+                    )
                     return None
 
                 model_params["api_key"] = api_key
-                return ChatAnthropic(model_name=model_name, callbacks=callbacks, **model_params)
+                return ChatAnthropic(
+                    model_name=model_name, callbacks=callbacks, **model_params
+                )
+            elif provider == "local":
+                base_url = provider_config.get("base_url")
 
+                if not base_url:
+                    logger.error(
+                        f"Base URL not found for provider '{provider}' in configuration."
+                    )
+                    return None
+
+                model_params["base_url"] = base_url
+
+                return ChatOllama(
+                    model=model_name, callbacks=callbacks, **model_params
+                )
             else:
                 logger.error(f"Unsupported provider: '{provider}'")
                 return None
@@ -202,10 +240,14 @@ class LLMInterface:
                     logger.error(f"Error formatting template: {e}")
 
         # No matching template found
-        logger.warning(f"No matching template found for keys: {list(kwargs.keys())}")
+        logger.warning(
+            f"No matching template found for keys: {list(kwargs.keys())}"
+        )
         return None, None
 
-    def _format_output(self, template_name: str, response: str) -> Optional[str]:
+    def _format_output(
+        self, template_name: str, response: str
+    ) -> Optional[str]:
         """
         Format the output using the appropriate output parser.
 
@@ -216,7 +258,9 @@ class LLMInterface:
         Returns:
             Optional[str]: The formatted output string or None if formatting failed.
         """
-        output_format = self.interaction_templates[template_name].get("output_format", {})
+        output_format = self.interaction_templates[template_name].get(
+            "output_format", {}
+        )
         try:
             formatted_output = extract_content_from_text(
                 response,
@@ -272,7 +316,9 @@ class LLMInterface:
             self.conversation_history.append(HumanMessage(content=input_text))
             self.conversation_history.append(ai_message)
 
-            formatted_output = self._format_output(template_name, ai_message.content)
+            formatted_output = self._format_output(
+                template_name, ai_message.content
+            )
             if not formatted_output:
                 logger.error("Formatted output is empty")
                 return None
@@ -290,7 +336,9 @@ class LLMInterface:
             tools (List[BaseTool]): List of tools to register.
         """
         self.available_tools.extend(tools)
-        logger.info(f"Registered {len(tools)} tools: {[tool.name for tool in tools]}")
+        logger.info(
+            f"Registered {len(tools)} tools: {[tool.name for tool in tools]}"
+        )
 
     def create_agent(self) -> Optional[Runnable]:
         """
@@ -308,21 +356,21 @@ class LLMInterface:
 
         try:
             # Create prompt template with tool descriptions
-            prompt = ChatPromptTemplate.from_messages(
-                [
-                    ("system", self.system_prompt),
-                    MessagesPlaceholder(variable_name="chat_history"),
-                    ("human", "{input}"),
-                    MessagesPlaceholder(variable_name="agent_scratchpad"),
-                ]
-            )
+            prompt = ChatPromptTemplate.from_messages([
+                ("system", self.system_prompt),
+                MessagesPlaceholder(variable_name="chat_history"),
+                ("human", "{input}"),
+                MessagesPlaceholder(variable_name="agent_scratchpad"),
+            ])
 
             # Create agent chain
             agent = (
                 {
                     "input": lambda x: x["input"],
                     "chat_history": lambda x: x.get("chat_history", []),
-                    "agent_scratchpad": lambda x: x.get("intermediate_steps", []),
+                    "agent_scratchpad": lambda x: x.get(
+                        "intermediate_steps", []
+                    ),
                 }
                 | prompt
                 | self.model
@@ -356,7 +404,11 @@ class LLMInterface:
         history = history or self.conversation_history
 
         try:
-            response = agent.invoke({"input": input_text, "chat_history": history, "intermediate_steps": []})
+            response = agent.invoke({
+                "input": input_text,
+                "chat_history": history,
+                "intermediate_steps": [],
+            })
 
             # Update conversation history
             self.conversation_history.append(HumanMessage(content=input_text))
@@ -402,7 +454,9 @@ class LLMInterface:
         load_dotenv("apis.key")
         prompt_manager = PromptManager(config_file_path)
         providers = cls._initialize_providers()
-        return cls(prompt_manager=prompt_manager, providers=providers, verbose=verbose)
+        return cls(
+            prompt_manager=prompt_manager, providers=providers, verbose=verbose
+        )
 
     @staticmethod
     def _initialize_providers() -> Dict[str, Dict[str, str]]:
@@ -418,19 +472,27 @@ class LLMInterface:
         return {
             "openai": {
                 "api_key": os.getenv("OPENAI_API_KEY", ""),
-                "base_url": os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1"),
+                "base_url": os.getenv(
+                    "OPENAI_BASE_URL", "https://api.openai.com/v1"
+                ),
             },
             "deepseek": {
                 "api_key": os.getenv("DEEPSEEK_API_KEY", ""),
-                "base_url": os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1"),
+                "base_url": os.getenv(
+                    "DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1"
+                ),
             },
             "togetherai": {
                 "api_key": os.getenv("TOGETHERAI_API_KEY", ""),
-                "base_url": os.getenv("TOGETHERAI_BASE_URL", "https://api.together.xyz/v1"),
+                "base_url": os.getenv(
+                    "TOGETHERAI_BASE_URL", "https://api.together.xyz/v1"
+                ),
             },
             "local": {
                 "api_key": "local_key",  # Not needed for local models
-                "base_url": os.getenv("LOCAL_AI_BASE_URL", "http://localhost:1234/v1"),
+                "base_url": os.getenv(
+                    "LOCAL_AI_BASE_URL", "http://ollama:11434/"
+                ),
             },
         }
 
@@ -448,7 +510,7 @@ def calculator(expression: str) -> str:
 # Usage example
 if __name__ == "__main__":
     # Initialize the LLMInterface with the configuration file
-    config_file_path = "configs/agents/challenge_designer.yml"
+    config_file_path = "configs/agents/challenge_designer.yaml"
     agent = LLMInterface.from_config_file(config_file_path, verbose=True)
 
     # Example: Using simple chat interface
@@ -460,5 +522,7 @@ if __name__ == "__main__":
     logger.info(f"Response: {response}")
 
     # Run the agent
-    response = agent.run_agent("Calculate 123 * 456 and use the result to write a short story")
+    response = agent.run_agent(
+        "Calculate 123 * 456 and use the result to write a short story"
+    )
     logger.info(f"Agent response: {response}")

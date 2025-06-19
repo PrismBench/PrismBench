@@ -55,7 +55,7 @@ class PromptManager:
 
 # Usage example
 if __name__ == "__main__":
-    writer_manager = PromptManager(config_file_path="configs/agents/problem_solver.yml")
+    writer_manager = PromptManager(config_file_path="configs/agents/problem_solver.yaml")
     # Example: Get prompt configuration for a specific role
     print("Agent (writer) name:", writer_manager.name)
     print("Agent (writer) configs:", writer_manager.configs)

@@ -111,14 +111,6 @@ services:
     depends_on:
       - search
 
-volumes:
-  llm_interface_code:
-  environment_code:
-  search_code:
-  gui_code:
-  gui_node_modules:
-  gui_next:
-
   # ollama:
   #   image: docker.io/ollama/ollama:latest
   #   ports:
@@ -142,3 +134,11 @@ volumes:
   #     retries: 3
   #     start_period: 10s
 
+
+volumes:
+  llm_interface_code:
+  environment_code:
+  search_code:
+  gui_code:
+  gui_node_modules:
+  gui_next:
