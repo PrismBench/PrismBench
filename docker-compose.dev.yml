@@ -1,0 +1,46 @@
+services:
+  llm-interface:
+    volumes:
+      - ./configs:/app/configs:cached
+      - ./configs/apis.key:/app/apis.key:ro
+      - ./src/services/llm_interface:/app:cached
+    environment:
+      - PYTHONPATH=/app
+      - AGENT_CONFIGS_FILE=/app/configs/agents.yml
+      - REDIS_URL=redis://redis:6379
+      - UVICORN_RELOAD=true
+
+  node-env:
+    volumes:
+      - ./configs:/app/configs:cached
+      - ./src/services/environment:/app:cached
+    environment:
+      - PYTHONPATH=/app
+      - LLM_SERVICE_URL=http://llm-interface:8000
+      - UVICORN_RELOAD=true
+
+  search:
+    volumes:
+      - ./configs:/app/configs:cached
+      - ./src/services/search:/app:cached
+    environment:
+      - PYTHONPATH=/app
+      - LLM_SERVICE_URL=http://llm-interface:8000
+      - ENV_SERVICE_URL=http://node-env:8000
+      - UVICORN_RELOAD=true
+
+  gui:
+    volumes:
+      - ./src/services/gui:/app:cached
+      - gui_node_modules:/app/node_modules
+      - gui_next:/app/.next
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8002/
+      - NEXT_PUBLIC_LLM_INTERFACE_URL=http://localhost:8000/
+      - NEXT_PUBLIC_NODE_ENV_URL=http://localhost:8001/
+      - NEXT_PUBLIC_SEARCH_URL=http://localhost:8002/
+      - WATCHPACK_POLLING=true
+
+volumes:
+  gui_node_modules:
+  gui_next: 
