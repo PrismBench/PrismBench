@@ -1,0 +1,139 @@
+{
+  "name": "PrismBench Development Environment",
+  "dockerComposeFile": ["devcontainer-compose.yml"],
+  "service": "devcontainer",
+  "workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind,consistency=cached",
+  "workspaceFolder": "/workspace",
+
+  // Features to install in the dev container
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true,
+      "upgradePackages": true,
+      "username": "vscode",
+      "userUid": "automatic",
+      "userGid": "automatic"
+    },
+    "ghcr.io/devcontainers/features/git:1": {
+      "ppa": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "installDirectlyFromGitHubRelease": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.13",
+      "installTools": true,
+      "optimize": true
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18",
+      "nodeGypDependencies": true,
+      "installYarnUsingApt": true
+    },
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "moby": true,
+      "installDockerBuildx": true,
+      "version": "latest"
+    }
+  },
+
+  // Configure tool-specific properties
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.formatting.provider": "black",
+        "python.linting.flake8Enabled": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+        },
+        "typescript.preferences.importModuleSpecifier": "relative",
+        "eslint.workingDirectories": ["src/services/gui"],
+        "files.exclude": {
+          "**/node_modules": true,
+          "**/.git": true,
+          "**/.DS_Store": true,
+          "**/Thumbs.db": true,
+          "**/__pycache__": true,
+          "**/.pytest_cache": true,
+          "**/*.pyc": true
+        }
+      },
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-python.pylint",
+        "ms-python.isort",
+        "redhat.vscode-yaml",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-next",
+        "bierner.markdown-mermaid",
+        "ms-vscode.vscode-json",
+        "ms-vscode.makefile-tools",
+        "ms-azuretools.vscode-docker",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-vscode.vscode-git-graph",
+        "eamodio.gitlens",
+        "tal7aouy.icons"
+      ]
+    }
+  },
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally
+  "forwardPorts": [3000, 8000, 8001, 8002, 6379],
+  "portsAttributes": {
+    "3000": {
+      "label": "🌐 GUI (Next.js)",
+      "onAutoForward": "openBrowser",
+      "protocol": "http",
+      "requireLocalPort": false
+    },
+    "8000": {
+      "label": "🤖 LLM Interface Service",
+      "onAutoForward": "silent",
+      "protocol": "http",
+      "requireLocalPort": false
+    },
+    "8001": {
+      "label": "🔧 Environment Service",
+      "onAutoForward": "silent",
+      "protocol": "http",
+      "requireLocalPort": false
+    },
+    "8002": {
+      "label": "🔍 Search Service",
+      "onAutoForward": "silent",
+      "protocol": "http",
+      "requireLocalPort": false
+    },
+    "6379": {
+      "label": "🗄️ Redis",
+      "onAutoForward": "silent",
+      "protocol": "tcp",
+      "requireLocalPort": false
+    }
+  },
+
+  // Set the default shell to zsh
+  "remoteUser": "vscode",
+
+  // Commands to run after the container is created
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+
+  // Mount the Docker socket so we can use Docker from inside the container
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+  ],
+
+  // Keep the container running even if VS Code is closed
+  "shutdownAction": "stopCompose"
+}

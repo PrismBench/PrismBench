@@ -1,0 +1,120 @@
+services:
+  redis:
+    image: redis:7
+    ports:
+      - "6390:6379"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      
+  llm-interface:
+    build:
+      context: ../src/services/llm_interface
+      dockerfile: Dockerfile
+    ports:
+      - "8010:8000"
+    volumes:
+      - ../configs:/app/configs:cached
+      - ../apis.key:/app/apis.key:ro
+      - ../src/services/llm_interface:/app:cached
+    environment:
+      - PYTHONPATH=/app
+      - AGENT_CONFIGS_FILE=/app/configs/agents.yml
+      - REDIS_URL=redis://redis:6379
+      - UVICORN_RELOAD=true
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8010/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  node-env:
+    build:
+      context: ../src/services/environment
+      dockerfile: Dockerfile
+    ports:
+      - "8011:8000"
+    volumes:
+      - ../configs:/app/configs:cached
+      - ../src/services/environment:/app:cached
+    environment:
+      - PYTHONPATH=/app
+      - LLM_SERVICE_URL=http://llm-interface:8000
+      - UVICORN_RELOAD=true
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8011/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      - llm-interface
+
+  search:
+    build:
+      context: ../src/services/search
+      dockerfile: Dockerfile
+    ports:
+      - "8012:8000"
+    volumes:
+      - ../configs:/app/configs:cached
+      - ../src/services/search:/app:cached
+    environment:
+      - PYTHONPATH=/app
+      - LLM_SERVICE_URL=http://llm-interface:8000
+      - ENV_SERVICE_URL=http://node-env:8000
+      - UVICORN_RELOAD=true
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8012/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      - llm-interface
+      - node-env
+
+  gui:
+    build:
+      context: ../src/services/gui
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_BASE_URL: "http://localhost:8012/"
+        NEXT_PUBLIC_LLM_INTERFACE_URL: "http://localhost:8010/"
+        NEXT_PUBLIC_NODE_ENV_URL: "http://localhost:8011/"
+        NEXT_PUBLIC_SEARCH_URL: "http://localhost:8012/"
+    ports:
+      - "3010:3000"
+    volumes:
+      - ../src/services/gui:/app:cached
+      - gui_node_modules:/app/node_modules
+      - gui_next:/app/.next
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8012/
+      - NEXT_PUBLIC_LLM_INTERFACE_URL=http://localhost:8010/
+      - NEXT_PUBLIC_NODE_ENV_URL=http://localhost:8011/
+      - NEXT_PUBLIC_SEARCH_URL=http://localhost:8012/
+      - WATCHPACK_POLLING=true
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3010"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      - search
+
+volumes:
+  gui_node_modules:
+  gui_next: 
