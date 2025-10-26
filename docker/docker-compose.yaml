@@ -1,0 +1,110 @@
+services:
+  base:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.base
+    image: prismbench-base:latest
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+  llm-interface:
+    build:
+      context: ../src/services/llm_interface
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      base:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+    env_file:
+      - ../apis.key
+    environment:
+      - PYTHONPATH=/app
+      - REDIS_URL=redis://redis:6379
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    volumes:
+      - ../configs:/app/configs
+      - ../src/services/llm_interface/src:/app/src:delegated
+  node-env:
+    build:
+      context: ../src/services/environment
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8000"
+    volumes:
+      - ../configs:/app/configs
+      - ../src/services/environment/src:/app/src:delegated
+    depends_on:
+      base:
+        condition: service_completed_successfully
+      llm-interface:
+        condition: service_healthy
+    environment:
+      - PYTHONPATH=/app
+      - LLM_SERVICE_URL=http://llm-interface:8000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+  search:
+    build:
+      context: ../src/services/search
+      dockerfile: Dockerfile
+    ports:
+      - "8002:8000"
+    volumes:
+      - ../configs:/app/configs
+      - ../src/services/search/src:/app/src:delegated
+    depends_on:
+      base:
+        condition: service_completed_successfully
+      llm-interface:
+        condition: service_healthy
+      node-env:
+        condition: service_healthy
+    environment:
+      - PYTHONPATH=/app
+      - LLM_SERVICE_URL=http://llm-interface:8000
+      - ENV_SERVICE_URL=http://node-env:8000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+  gui:
+    build:
+      context: ../src/services/gui
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8002/
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      - search

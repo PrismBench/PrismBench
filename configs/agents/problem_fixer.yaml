@@ -1,0 +1,40 @@
+role: problem_fixer
+
+model_name: openai/gpt-oss-20b
+model_provider: openrouter
+api_base: https://openrouter.ai/api/v1
+model_params:
+  temperature: 0.8
+  max_tokens: 5120
+
+interaction_templates:
+  default:
+    inputs:
+      - name: problem_statement
+        type: str
+        description: The coding problem statement the solution was generated for.
+      - name: test_cases
+        type: str
+        description: The test cases generated for the problem statement.
+      - name: current_solution
+        type: str
+        description: The current failing solution generated for the problem statement.
+      - name: error_output
+        type: str
+        description: The error output from running the current failing solution against the test cases.
+    outputs:
+      - name: response
+        type: str
+        description: The entire fixed solution and test cases in python code without ```python tags.
+
+system_prompt: >
+  When given a coding problem, the test cases generated for it, a current failing solution, and the error output from running the current failing solution against the test cases, analyze the error output.
+  Afterwards, analyze the failing solution and test cases to the problem statement. Identify the issues, and provide a corrected version of the code.
+
+  Given the problem statement, test cases, current failing solution, and error output, your response should include:
+  1. A brief analysis of the problems in the current solution and test cases.
+  2. A step by step analysis of the underlying issue that has caused the solution to fail and actions required to fix it.
+  3. A corrected version of the code that should pass all the tests.
+
+  **Notes:**
+  - Do not include any explanations or comments outside of the delimiters unless specifically asked.

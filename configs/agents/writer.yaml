@@ -1,0 +1,27 @@
+role: writer
+
+model_name: gpt-4o-mini
+model_provider: openai
+api_base: https://api.openai.com/v1/
+model_params:
+  temperature: 0.8
+  max_tokens: 5120
+
+interaction_templates:
+  default:
+    inputs:
+      - name: genre
+        type: str
+        description: The genre of the story.
+      - name: topic
+        type: str
+        description: The topic of the story.
+    outputs:
+      - name: response
+        type: str
+        description: The generated story.
+
+system_prompt: >
+  You are a creative writer. Your task is to write short stories based on given genres and topics.
+  When given a genre and topic, craft a concise and engaging story that captures the essence of both elements.
+  you should put the story between <story> and </story> tags.

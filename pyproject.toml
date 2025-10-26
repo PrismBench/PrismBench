@@ -1,0 +1,140 @@
+[project]
+  authors         = [{ name = "prismbench", email = "prismbenchdemo@gmail.com" }]
+  description     = "PrismBench"
+  name            = "PrismBench"
+  readme          = "README.md"
+  requires-python = ">=3.12"
+  version         = "0.0.4"
+
+[project.urls]
+  Documentation = "https://github.com/PrismBench/PrismBench/blob/main/README.md"
+  Issues        = "https://github.com/PrismBench/PrismBench/issues"
+  Repository    = "https://github.com/PrismBench/PrismBench"
+
+[project.optional-dependencies]
+  # Development and tooling dependencies
+  dev = [
+    "commitizen>=4.8.3",
+    "factory-boy>=3.3.3",
+    "flake8>=7.3.0",
+    "freezegun>=1.5.3",
+    "isort>=6.0.1",
+    "pre-commit>=4.2.0",
+    "pytest>=8.4.1",
+    "ruff>=0.12.4",
+  ]
+
+# =============================================================================
+# TOOL CONFIGURATIONS
+# =============================================================================
+# Commitizen Configuration (Version Bumping & Conventional Commits)
+[tool.commitizen]
+  major_version_zero       = true
+  name                     = "cz_conventional_commits"
+  tag_format               = "$version"
+  update_changelog_on_bump = true
+  version                  = "0.3.3"
+  version_provider         = "commitizen"
+  version_type             = "semver"
+
+  # Support legacy tag formats for old releases
+  legacy_tag_formats = ["$version"]
+
+  # Files that contain version information to be updated on bump
+  version_files = ["pyproject.toml:^version"]
+
+  # Changelog configuration
+  changelog_file             = "CHANGELOG.md"
+  changelog_format           = "markdown"
+  changelog_merge_prerelease = false
+
+  # Commit message templates
+  bump_message = "bump: version $current_version → $new_version"
+
+  # Pre-commit hook integration
+  check_consistency = true
+  use_shortcuts     = true
+
+# Custom commit types (extends conventional commits)
+[tool.commitizen.customize]
+  example = "feat(apps/ui): add paper clustering algorithm"
+  message_template = "{{change_type}}{{scope}}: {{message}}"
+  schema = """
+<type>(<scope>): <body>
+
+<body>
+
+Closes #<issue number>
+"""
+  schema_pattern = "^(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert|bump)(\\(.+\\))?: .{1,99}"
+
+[[tool.commitizen.customize.questions]]
+  choices = [
+    { value = "feat", name = "feat: ✨ A new feature" },
+    { value = "fix", name = "fix: 🐛 A bug fix" },
+    { value = "docs", name = "docs: 📚 Documentation changes" },
+    { value = "style", name = "style: 💎 Code style changes (formatting, etc)" },
+    { value = "refactor", name = "refactor: ♻️  Code refactoring" },
+    { value = "perf", name = "perf: 🚀 Performance improvements" },
+    { value = "test", name = "test: 🧪 Adding or updating tests" },
+    { value = "build", name = "build: 📦 Build system or dependency changes" },
+    { value = "ci", name = "ci: 👷 CI/CD changes" },
+    { value = "chore", name = "chore: 🔧 Other changes (maintenance, etc)" },
+    { value = "revert", name = "revert: ⏪ Revert a previous commit" },
+  ]
+  message = "Select the type of change you are committing:"
+  name = "change_type"
+  type = "list"
+
+[[tool.commitizen.customize.questions]]
+  message = "What is the scope of this change? (apps/ui, apps/crawler, apps/postgres, pkgs/pallas, etc.) [optional]:"
+  name    = "scope"
+  type    = "input"
+
+[[tool.commitizen.customize.questions]]
+  message = "Write a short and imperative summary of the code changes:"
+  name    = "message"
+  type    = "input"
+
+# Increment rules based on commit types
+[tool.commitizen.customize.bump_pattern]
+  "^BREAKING CHANGE" = "MAJOR"
+  "^feat"            = "MINOR"
+  "^fix"             = "PATCH"
+  "^perf"            = "PATCH"
+  "^refactor"        = "PATCH"
+
+# Ruff Configuration (Linting & Formatting)
+[tool.ruff]
+  # Basic settings that apply to the entire monorepo
+  indent-width   = 4
+  line-length    = 120
+  target-version = "py312"
+
+  # Include all Python files in the monorepo
+  include = ["apps/**/*.py", "pkgs/**/*.py", "src/**/*.py", "scripts/**/*.py"]
+
+  # Exclude generated files and migrations
+  extend-exclude = ["migrations/", "*.egg-info", "__pycache__", ".git", ".venv"]
+
+[tool.ruff.lint]
+  ignore = ["E501"]        # Ignore line-too-long (we use line-length instead)
+  select = ["E", "F", "I"] # E: pycodestyle errors, F: pyflakes, I: isort
+
+[tool.ruff.lint.isort]
+  known-first-party       = ["src"]
+  length-sort             = false
+  split-on-trailing-comma = true
+
+# Taplo Configuration (TOML Formatting)
+[tool.taplo]
+[tool.taplo.formatting]
+  align_comments         = true  # Align comments for better readability
+  align_entries          = true  # Align entries for better readability
+  column_width           = 120   # Maximum width before wrapping (match Ruff line-length)
+  compact_arrays         = true  # Keep short arrays on one line
+  compact_inline_tables  = false # Don't compact inline tables
+  indent_string          = "  "  # Indent with spaces (2 spaces to match project style)
+  newline_around_section = true  # Add newlines around sections
+  reorder_keys           = true  # Reorder keys for better readability
+  trailing_comma         = true  # Add trailing comma in multiline arrays

@@ -1,0 +1,19 @@
+role: this is where the agent's role goes. it should follow snake case. for example, "challenge_designer". this name will be used for defining the agent throughout the framework.
+
+model_name: this is where the model name goes. it should be a string that will be used to define the model for the agent. this comes from the provider directly. for example "gpt-4o-mini" or "claude-3-5-sonnet-20240620".
+model_provider: this is where the model provider goes. it should be a string that will be used as the provider for the agent. for example "openai" or "anthropic".
+api_base: this is where the api base goes. it should be a string that will be used as the api base for the agent. for example "https://api.openai.com/v1/" or "https://api.anthropic.com/v1/".
+model_params: this is where the model params goes. it should be a dictionary that will be used to define the model params for the agent.
+
+interaction_templates:
+  - template_name:
+      inputs:
+        - name: this is where the name of the input goes. it should be a string that will be used to define the name of the input for the interaction template for the agent. for example "concepts" or "difficulty_level"
+          type: this is where the type of the input goes. it should be a string that will be used to define the type of the input for the interaction template for the agent. for example "str" or "int"
+          description: this is where the description of the input goes. it should be a string that will be used to define the description of the input for the interaction template for the agent. for example "The concepts to generate a story for." or "The difficulty level of the story."
+      outputs:
+        - name: this is where the name of the output goes. it should be a string that will be used to define the name of the output for the interaction template for the agent. for example "response" or "response_middle"
+          type: this is where the type of the output goes. it should be a string that will be used to define the type of the output for the interaction template for the agent. for example "str" or "int"
+          description: this is where the description of the output goes. it should be a string that will be used to define the description of the output for the interaction template for the agent. for example "The generated story." or "The middle of the story."
+
+system_prompt: this is where the system prompt goes. it should be a string that will be used as the system prompt for the agent.

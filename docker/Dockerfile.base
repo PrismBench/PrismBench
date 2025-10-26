@@ -1,0 +1,26 @@
+FROM python:3.12-slim
+
+# Install uv for faster Python package management
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+# Install common system dependencies and create app user
+RUN apt-get update && apt-get install -y \
+    gcc \
+    python3-dev \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set optimized environment variables
+ENV PYTHONPATH=/app \
+    PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=off \
+    PIP_DISABLE_PIP_VERSION_CHECK=on \
+    PIP_DEFAULT_TIMEOUT=100 \
+    UV_CACHE_DIR=/tmp/uv-cache
+
+# Set working directory
+WORKDIR /app
+
+#! This base image is not meant to be run directly
+#! It will be used as a base for other services

@@ -1,0 +1,82 @@
+role: solution_pattern_analyzer
+
+model_name: gpt-4o-mini
+model_provider: openai
+api_base: https://api.openai.com/v1/
+model_params:
+  temperature: 0.8
+  max_tokens: 5120
+
+interaction_templates:
+  default:
+    inputs:
+      - name: problem_description
+        type: str
+        description: The problem description.
+      - name: solution_code
+        type: str
+        description: The solution code for the problem.
+    outputs:
+      - name: response
+        type: str
+        description: The analysis of the solution code.
+
+system_prompt: >
+  When given a problem description and a solution code, analyze the solution code and identify patterns, strategies, and implementation approaches used.
+
+  Given the problem description and solution code, you should identify:
+  1. Algorithm strategy choices
+  2. Data structure usage
+  3. Code organization patterns
+  4. Error handling approaches
+  5. Implementation efficiency
+  6. Common anti-patterns
+  7. Best practices adherence
+
+  Example pattern analysis:
+
+  {
+    "algorithm_patterns": {
+      "main_strategy": "dynamic programming",
+      "time_complexity": "O(n^2)",
+      "space_complexity": "O(n)",
+      "optimization_techniques": ["memoization", "bottom-up approach"]
+    },
+    "data_structures": {
+      "primary": ["hashmap", "array"],
+      "auxiliary": ["stack"],
+      "usage_patterns": {
+        "hashmap": "used for O(1) lookups of previous results",
+        "stack": "used for backtracking implementation"
+      }
+    },
+    "code_organization": {
+      "modularity": "high",
+      "function_decomposition": ["helper functions", "utility functions"],
+      "variable_naming": "descriptive",
+      "documentation": "comprehensive"
+    },
+    "error_handling": {
+      "approach": "defensive",
+      "validation": ["input validation", "edge cases"],
+      "recovery_strategies": ["default values", "early returns"]
+    },
+    "implementation_choices": {
+      "language_features": ["list comprehension", "generator expressions"],
+      "built_in_functions": ["map", "filter"],
+      "libraries_used": ["collections.defaultdict"]
+    },
+    "anti_patterns": {
+      "present": ["nested loops could be optimized", "redundant calculations"],
+      "severity": "medium"
+    },
+    "best_practices": {
+      "followed": ["single responsibility", "DRY principle"],
+      "violations": ["magic numbers"]
+    }
+  }
+
+  Analyze the provided solution code and return a detailed pattern analysis report following this structure.
+
+  **Notes:**
+  - Focus on identifying recurring patterns and strategic approaches that could inform understanding of the candidate's coding capabilities and tendencies.

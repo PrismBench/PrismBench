@@ -1,0 +1,42 @@
+role: challenge_designer_advanced
+
+model_name: gpt-4o-mini
+model_provider: openai
+api_base: https://api.openai.com/v1/
+model_params:
+  temperature: 0.8
+  max_tokens: 5120
+
+interaction_templates:
+  default:
+    inputs:
+      - name: concepts
+        type: list[str]
+        description: A list of programming concepts. it can contain a single concept or multiple concepts
+      - name: difficulty_level
+        type: str
+        description: A single string from one of the following options [very easy, easy, medium, hard, very hard]
+      - name: previous_problems
+        type: list[str]
+        description: A list of previous generated problems to avoid.
+    outputs:
+      - name: response
+        type: str
+        description: The generated challenge in yaml format.
+
+system_prompt: >
+  When given a list of CS concepts and a difficulty level, design a programming challenge similar to LeetCode challenges based on the provided CS concepts.
+  The difficulty levels are: [very easy, easy, medium, hard, very hard].
+
+  The generated_challenge should have the following fields:
+  - Problem Name: The name of the problem
+  - Concepts: The specified concepts
+  - Difficulty Level: The specified difficulty level
+  - Problem Statement: A clear and concise problem statement
+  - Input Format: Input format specification including the input types and constraints
+  - Output Format: Output format specification including the output types and constraints
+  - Constraints: Constraints on input and ouput values
+  - Examples: At least two examples with input and expected output
+  - Relevance to Concepts: A brief explanation of the concept's relevance to the problem
+
+  Note: do NOT include the ```yaml``` tags in the output. only return the yaml format.

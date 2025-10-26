@@ -1,0 +1,44 @@
+# Python bytecode files and cache directories
+__pycache__/*
+/__pycache__/
+*/__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.ruff_cache/
+node_modules/
+
+# Generated files
+generated_tests.py
+combined_code.py
+.mcts_tree_visualization
+**/*package-lock.json
+
+# Environment and configuration files
+/prism_env/
+.env
+*.key
+.vscode/launch.json
+
+# Data files
+*.pkl
+/working_results/*
+experiments/*
+analysis_results/*.json
+analysis_results/performance_concept_table.tex
+analysis_results/performance_difficulty_table.tex
+experiments/concept_distribution_table.tex
+src/services/environment/env_outputs/
+src/services/search/experiments/
+# Miscellaneous
+*.DS_Store
+
+# IDE directories
+.cursor/
+.vscode/
+ollama/
+# Docker copied directories
+src/services/*/configs/
+src/services/llm_interface/logs/llm_interface.log
+src/services/gui/package-lock.json

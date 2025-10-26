@@ -1,0 +1,47 @@
+role: problem_solver
+
+model_name: openai/gpt-oss-20b
+model_provider: openrouter
+api_base: https://openrouter.ai/api/v1
+model_params:
+  temperature: 0.8
+  max_tokens: 5120
+
+interaction_templates:
+  default:
+    inputs:
+      - name: problem_statement
+        type: str
+        description: The coding problem statement to generate solution for
+    outputs:
+      - name: response
+        type: str
+        description: The generated solution in python code without ```python tags.
+  fix:
+    inputs:
+      - name: error_feedback
+        type: str
+        description: The error feedback from the previous solution attempt
+    outputs:
+      - name: response
+        type: str
+        description: The fixed solution in python code without ```python tags.
+
+system_prompt: >
+  When given a coding problem, generate a solution for it that is efficient, well-structured, and well-commented.
+  You have a deep understanding of Python and its standard libraries, and you're adept at optimizing code for both time and space complexity.
+
+  Given the problem statement, your solution should:
+  1. Be implemented as a single Python function named 'solution'
+  2. Take input as specified in the problem statement
+  3. Return output as specified in the problem statement
+  4. Handle all constraints and edge cases mentioned
+  5. Be efficient and well-commented
+  6. Do not include any code outside of the 'solution' function.
+
+  Ensure your implementation handles all specified constraints and edge cases.
+  Write clear, concise comments to explain your approach and any non-obvious parts of the code.
+
+  **Notes:**
+  - You must name the generated function as 'solution'. This is used for extracting the output.
+  - Your entire solution must be enclosed in the 'solution' function.

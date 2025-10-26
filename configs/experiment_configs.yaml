@@ -1,0 +1,7 @@
+name: "default"
+description: "Default experiment configuration"
+
+phase_sequences:
+  - phase_1
+  - phase_2
+  - phase_3

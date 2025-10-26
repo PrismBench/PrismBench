@@ -1,0 +1,135 @@
+{
+  "name": "PrismBench DevForge",
+  "service": "devcontainer",
+  "remoteUser": "root",
+  "workspaceFolder": "/PrismBench",
+  "dockerComposeFile": "devcontainer-compose.yaml",
+  "postCreateCommand": "make setup",
+  "postStartCommand": "chmod 666 /var/run/docker.sock",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "ms-python.python",
+        "redhat.vscode-yaml",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.makefile-tools",
+        "bierner.markdown-mermaid",
+        "tamasfe.even-better-toml",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true
+        },
+        "[python]": {
+          "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+          },
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "editor.formatOnSave": true
+        },
+        "[toml]": {
+          "editor.defaultFormatter": "tamasfe.even-better-toml",
+          "editor.formatOnSave": true
+        },
+        "[yaml]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true
+        },
+        "[yml]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true
+        },
+        "eslint.workingDirectories": [
+          "src/services/gui"
+        ],
+        "evenBetterToml.formatter.alignComments": true,
+        "evenBetterToml.formatter.alignEntries": true,
+        "evenBetterToml.formatter.columnWidth": 120,
+        "evenBetterToml.formatter.compactArrays": true,
+        "evenBetterToml.formatter.compactInlineTables": false,
+        "evenBetterToml.formatter.indentString": "  ",
+        "evenBetterToml.formatter.newlineAroundSection": true,
+        "evenBetterToml.formatter.reorderKeys": true,
+        "evenBetterToml.formatter.trailingComma": true,
+        "evenBetterToml.schema.associations": {
+          "pyproject\\.toml$": "https://json.schemastore.org/pyproject.json"
+        },
+        "evenBetterToml.schema.enabled": true,
+        "files.exclude": {
+          "**/*.pyc": true,
+          "**/.DS_Store": true,
+          "**/.git": true,
+          "**/.pytest_cache": true,
+          "**/Thumbs.db": true,
+          "**/__pycache__": true,
+          "**/node_modules": true
+        },
+        "prettier.bracketSpacing": true,
+        "prettier.endOfLine": "lf",
+        "prettier.insertFinalNewline": true,
+        "prettier.printWidth": 120,
+        "prettier.quoteProps": "preserve",
+        "prettier.semi": true,
+        "prettier.singleQuote": false,
+        "prettier.tabWidth": 2,
+        "prettier.trailingComma": "none",
+        "prettier.useTabs": false,
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.formatting.provider": "none",
+        "python.linting.enabled": false,
+        "python.linting.flake8Enabled": false,
+        "python.linting.pylintEnabled": false,
+        "ruff.configurationPreference": "filesystemFirst",
+        "ruff.format.enable": true,
+        "ruff.importStrategy": "fromEnvironment",
+        "ruff.lint.enable": true,
+        "workbench.iconTheme": "icons",
+        "yaml.completion": true,
+        "yaml.format.bracketSpacing": true,
+        "yaml.format.enable": true,
+        "yaml.format.proseWrap": "preserve",
+        "yaml.format.singleQuote": false,
+        "yaml.hover": true,
+        "yaml.validate": true
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true,
+      "installZsh": true,
+      "upgradePackages": true,
+      "userGid": "automatic",
+      "userUid": "automatic",
+      "username": "root"
+    },
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "installDockerBuildx": true,
+      "moby": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/git:1": {
+      "ppa": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "installDirectlyFromGitHubRelease": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "installYarnUsingApt": true,
+      "nodeGypDependencies": true,
+      "version": "18"
+    }
+  }
+}

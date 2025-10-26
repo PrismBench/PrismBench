@@ -1,0 +1,19 @@
+services:
+  devcontainer:
+    image: ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+    volumes:
+      - ..:/PrismBench:cached
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: sleep infinity
+    working_dir: /PrismBench
+    environment:
+      - PYTHONPATH=/PrismBench
+    user: root
+    group_add:
+      - docker
+    cap_add:
+      - SYS_ADMIN
+
+volumes:
+  gui_node_modules:
+  gui_next:

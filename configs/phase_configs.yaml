@@ -1,0 +1,71 @@
+phase_1:
+  phase_params:
+    max_depth: 5
+    max_iterations: 100
+    performance_threshold: 0.4 # higher thresholds, mean more conservative node expansion
+    value_delta_threshold: 0.3 # higher thresholds, mean easier convergence checks
+    convergence_checks: 10
+    exploration_probability: 0.25 # higher values, mean more exploration
+    num_nodes_per_iteration: 5
+
+  search_params:
+    max_attempts: 3
+    discount_factor: 0.9
+    learning_rate: 0.9 # the ratio of new node values' score to the old node values' score. 1 means no consideration of old values
+
+  scoring_params:
+    penalty_per_failure: 2
+    penalty_per_error: 3
+    penalty_per_attempt: 1
+    fixed_by_problem_fixer_penalty: 5
+    max_num_passed: 10
+
+  environment:
+    name: "environment_coding_challenge"
+
+phase_2:
+  phase_params:
+    max_depth: 10
+    max_iterations: 100
+    performance_threshold: 0.4 # higher thresholds, mean more conservative node expansion
+    value_delta_threshold: 0.2 # higher thresholds, mean easier convergence checks
+    convergence_checks: 5
+    exploration_probability: 0.2
+    num_nodes_per_iteration: 5
+    exploration_weight: 1.414
+    challenge_threshold: 0.5 # higher thresholds, mean selecting more challenging nodes
+
+  search_params:
+    max_attempts: 3
+    discount_factor: 0.9
+    learning_rate: 1 # the ratio of new node values' score to the old node values' score. 1 means no consideration of old values
+
+  environment:
+    name: "environment_coding_challenge"
+
+phase_3:
+  phase_params:
+    max_depth: 12
+    max_iterations: 100
+    performance_threshold: 0.4 # higher thresholds, mean more conservative node expansion
+    value_delta_threshold: 0.2 # higher thresholds, mean easier convergence checks
+    convergence_checks: 5
+    exploration_probability: 0.2 # higher values, mean more exploration
+    num_nodes_per_iteration: 5
+    variations_per_concept: 5 # number of variations to generate per concept
+    node_selection_threshold: 0.5 # higher thresholds, mean selecting more challenging nodes
+
+  search_params:
+    max_attempts: 3
+    discount_factor: 0.9
+    learning_rate: 1 # the ratio of new node values' score to the old node values' score. 1 means no consideration of old values
+
+  scoring_params:
+    penalty_per_failure: 2
+    penalty_per_error: 3
+    penalty_per_attempt: 1
+    fixed_by_problem_fixer_penalty: 5
+    max_num_passed: 10
+
+  environment:
+    name: "environment_enhanced_coding_challenge"

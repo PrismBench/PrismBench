@@ -1,0 +1,83 @@
+
+logic_error:
+  - logic
+  - incorrectly
+  - flaw
+  - mistake
+  - misidentify
+
+assertion_error:
+  - AssertionError
+  - assertion failed
+  - expected.*but got
+  - assert
+
+edge_case_error:
+  - edge case
+  - boundary condition
+  - corner case
+  - special case
+
+type_error:
+  - TypeError
+  - type mismatch
+  - wrong type
+  - invalid type
+
+index_error:
+  - IndexError
+  - out of range
+  - bounds
+  - invalid index
+
+value_error:
+  - ValueError
+  - invalid value
+  - incorrect value
+  - wrong value
+
+algorithm_error:
+  - algorithm failed
+  - incorrect algorithm
+  - wrong strategy
+
+output_format_error:
+  - output format
+  - format mismatch
+  - incorrect format
+  - output structure
+  - output discrepancy
+
+order_error:
+  - order
+  - ordering
+  - sequence
+  - sorted
+  - unsorted
+  - different order
+
+case_sensitivity_error:
+  - case-sensitive
+  - case sensitivity
+  - uppercase
+  - lowercase
+  - mixed-case
+
+performance_error:
+  - performance issue
+  - time complexity
+  - memory usage
+  - efficiency
+  - large dataset
+  - efficiently
+
+setup_error:
+  - setup issue
+  - configuration
+  - initialization
+  - setup failed
+
+unexpected_input_error:
+  - unexpected input
+  - unhandled input
+  - invalid input

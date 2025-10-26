@@ -1,0 +1,53 @@
+fail_fast: false
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        name: Purge trailing whitespace
+        args:
+          - --markdown-linebreak-ext=md
+        exclude: src/services/frontend/src/features/landing/components/Logo.tsx
+      - id: end-of-file-fixer
+        name: Ensure EOF newline
+      - id: check-docstring-first
+        name: Check docstrings are before code
+      - id: check-json
+        name: Validate JSON syntax
+      - id: check-yaml
+        name: Validate YAML syntax
+      - id: pretty-format-json
+        name: Ensure JSON is pretty formatted
+        args:
+          - --indent=2
+          - --autofix
+          - --top-keys
+          - name,service,remoteUser,workspaceFolder,dockerComposeFile,postCreateCommand,postStartCommand,shutdownAction
+      - id: check-toml
+        name: Validate TOML syntax
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        name: Format YAML files with Prettier
+        types: [yaml]
+        args:
+          - --tab-width=2
+          - --print-width=120
+          - --parser=yaml
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.4
+    hooks:
+      - id: ruff-check
+        name: Sanctify code with Ruff
+        args:
+          - --fix
+      - id: ruff-format
+        name: Format code with Ruff
+        exclude: (?s)LARGE_ASCII_ART\s*=\s*(""".*?""") # Exclude large ASCII block
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v4.8.3
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]
+        name: Sanctify commit message
